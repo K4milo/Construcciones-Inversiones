@@ -1,39 +1,37 @@
 body {
 
 	.navbar {
-		.container-fluid {
-			// brand
-			.navbar-brand {
-				display: none;
-				overflow: hidden;
-				vertical-align: middle;
-				background-image: url('../img/logos/logo.png');
-				float: none;
-				width: 235px;
-				height: 61px;
-				text-indent: -9999999px;
-				margin: em(20) auto;
-				@include desktop {
-					
-				}
-				@include smdesktop {
-					
-				}
-				//left menu
-				@include tablet {
-					
-				}
+		// brand
+		.navbar-brand {
+			display: none;
+			overflow: hidden;
+			vertical-align: middle;
+			background-image: url('../img/logos/logo.png');
+			float: none;
+			width: 235px;
+			height: 61px;
+			text-indent: -9999999px;
+			margin: em(20) auto;
+			@include desktop {
+				
 			}
+			@include smdesktop {
+				
+			}
+			//left menu
+			@include tablet {
+				
+			}
+		}
 
-			// Min Navigation styles
-			#navbar {
-				@include mobile {
-					
-				}
-				//left menu
-				@include desktop {
-					
-				}
+		// Min Navigation styles
+		#navbar {
+			@include mobile {
+				
+			}
+			//left menu
+			@include desktop {
+				
 			}
 		}
 		
