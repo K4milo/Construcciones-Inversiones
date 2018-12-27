@@ -18,5 +18,11 @@
 	// Cotizador
 	get_template_part('includes/home/block','quotes');
 
+	// Formulario
+	get_template_part('includes/home/block','form');
+
+	// Clientes
+	get_template_part('includes/loops/clientes');
+
 
 	get_template_part('includes/footer');

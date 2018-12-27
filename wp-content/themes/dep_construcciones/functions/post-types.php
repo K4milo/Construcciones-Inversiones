@@ -33,6 +33,32 @@ function create_posttype() {
 	    )
 	);
 
+	//Clientes
+
+	register_post_type( 'cliente',
+	// CPT Options
+	    array(
+	        'labels' => array(
+	            'name' => __( 'Clientes' ),
+	            'singular_name' => __( 'Cliente' )
+	        ),
+	        'rewrite' => array('slug' => 'cliente'),
+	        'supports' => array( 'title', 'thumbnail'),
+	        'public' => true,
+	        'hierarchical'        => false,
+	        'show_ui'             => true,
+	        'show_in_menu'        => true,
+	        'show_in_nav_menus'   => true,
+	        'show_in_admin_bar'   => true,
+	        'menu_position'       => 6,
+	        'can_export'          => true,
+	        'has_archive'         => true,
+	        'exclude_from_search' => true,
+	        'publicly_queryable'  => true,
+	        'capability_type'     => 'post'
+	    )
+	);
+
 	////////////////////
 	// TAXONOMIAS
 	///////////////////

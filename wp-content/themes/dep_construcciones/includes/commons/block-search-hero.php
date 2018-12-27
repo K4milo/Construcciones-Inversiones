@@ -15,7 +15,7 @@ $term_children = get_term_children( $term_id, $taxonomy_name );
 <section id="heroBanner" class="block-hero--search">
 	<div class="container">
 		<h2>Un nuevo espacio lo espera</h2>
-		<form>
+		<form action="<?php echo get_site_url(); ?>/resultados/" method="post">
 			<ul>
 				<li>
 					<select name="type">
@@ -50,6 +50,7 @@ $term_children = get_term_children( $term_id, $taxonomy_name );
 				</li>
 				<li>
 					<input type="number" name="area" placeholder="Número de Área">
+					<input type="hidden" name="from-home" value="1">
 					<small>Ingrese el número de área</small>
 				</li>
 				<li>
