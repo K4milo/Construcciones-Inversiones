@@ -1,0 +1,35 @@
+body {
+	&.home {
+		.loop-inmuebles {
+			h3 {
+				font-size: em(20);
+				margin: em(10) auto 0;
+				color: $red;
+				@include sm {
+					margin: em(20) auto em(10);
+					font-size: em(40);
+				}
+			}
+
+			// Add spacing between images
+			.slick-slide {
+				@include sm {
+					margin: 0 em(20);
+				}
+			}
+			.slick-prev {
+				left: 50px;
+				z-index: 1;
+				@include sm {
+					left: -50px;
+				}
+			}
+			.slick-next {
+				right: 50px;
+				@include sm {
+					right: -50px;
+				}
+			}
+		}
+	}
+}

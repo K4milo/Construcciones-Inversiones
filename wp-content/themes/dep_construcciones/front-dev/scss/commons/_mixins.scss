@@ -33,6 +33,11 @@ $browser-context: 16; // Default
   }
 }
 
+@mixin sm {
+  @media (min-width: #{$sm-desktop-width}) {
+    @content;
+  }
+}
 
 @mixin smdesktop {
   @media (min-width: 1025px) and (max-width: 1380px) {

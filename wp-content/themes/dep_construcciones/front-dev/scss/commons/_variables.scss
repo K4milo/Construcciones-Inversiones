@@ -12,7 +12,9 @@ $lgrey4: #f1f1f1;
 $lgrey5: #c9c9c9;
 $lgrey6: #dedee4;
 $txtgrey: #666666;
-$red: #e10e20; 
+$red: #E43834;
+
+$op_red: rgba(228,56,52,0.7); 
 
 
 //screens
@@ -23,8 +25,7 @@ $sm-desktop-width: 1024px;
 $big-desktop-width: 1481px;
 
 //Fonts
-$regular: 'Gotham Medium';
-$bold: 'Gotham Bold';
-$light: 'Gotham Light';
-$book: 'Gotham-Book-Font';
-$extra: 'Gotham Black';
+$regular: 'Century Gothic';
+$bold: 'Bebas Neue'; 
+$g-boldIt: 'Century Gothic Bold Italic';
+$g-bold: 'Century Gothic Bold';

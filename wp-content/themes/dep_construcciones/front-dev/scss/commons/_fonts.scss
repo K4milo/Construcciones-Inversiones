@@ -1,40 +1,47 @@
 @font-face {
-    font-family: 'Gotham Light';
-    src: url('../fonts/gotham/Gotham-Light.woff2') format('woff2'),
-        url('../fonts/gotham/Gotham-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Medium';
-    src: url('../fonts/gotham/Gotham-Medium.woff2') format('woff2'),
-        url('../fonts/gotham/Gotham-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham-Book-Font';
-    src: url('../fonts/gotham/Gotham-Book.woff2') format('woff2'),
-        url('../fonts/gotham/Gotham-Book.woff') format('woff');
+    font-family: 'Century Gothic';
+    src: url('../fonts/CenturyGothic.eot');
+    src: url('../fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CenturyGothic.woff2') format('woff2'),
+        url('../fonts/CenturyGothic.woff') format('woff'),
+        url('../fonts/CenturyGothic.svg#CenturyGothic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Bold';
-    src: url('../fonts/gotham/Gotham-Bold.woff2') format('woff2'),
-        url('../fonts/gotham/Gotham-Bold.woff') format('woff');
+    font-family: 'Century Gothic Bd';
+    src: url('../fonts/CenturyGothic-Bold.woff2') format('woff2'),
+        url('../fonts/CenturyGothic-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gotham Black';
-    src: url('../fonts/gotham/Gotham-Black.woff2') format('woff2'),
-        url('../fonts/gotham/Gotham-Black.woff') format('woff');
-    font-weight: 500;
+    font-family: 'Century Gothic Bold Italic';
+    src: url('../fonts/CenturyGothic-BoldItalic.woff2') format('woff2'),
+        url('../fonts/CenturyGothic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Century Gothic Bold';
+    src: url('../fonts/CenturyGothic-Bold.woff2') format('woff2'),
+        url('../fonts/CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue.eot');
+    src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeue.woff2') format('woff2'),
+        url('../fonts/BebasNeue.woff') format('woff'),
+        url('../fonts/BebasNeue.svg#BebasNeue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 

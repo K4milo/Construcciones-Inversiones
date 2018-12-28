@@ -2,18 +2,18 @@
 
 	// Slick slider for carousel
 
-	var light_carousel = $('.light-carousel'),
+	var carousel_pods = $('.carousel-pods'),
 		dblue_carousel = $('.dark-carousel');
 
-	if(light_carousel) {
+	if(carousel_pods) {
 
-		light_carousel.slick({
-		dots: true,
+		carousel_pods.slick({
+		dots: false,
 		arrows: true,
 		infinite: false,
 		speed: 300,
-		slidesToShow: 5,
-		slidesToScroll: 5,
+		slidesToShow: 3,
+		slidesToScroll: 3,
 		responsive: 
 			[
 				{
@@ -21,10 +21,10 @@
 					settings: {
 						infinite: true,
 						arrows: false,
-						slidesToScroll: 3,
+						slidesToScroll: 2,
 						centerMode: true,
 						speed: 300,
-						slidesToShow: 3,
+						slidesToShow: 2,
 
 					}
 				},
@@ -45,16 +45,19 @@
 		// EOF CAROUSEL
 	}
 
-	if(dblue_carousel) {
-		dblue_carousel.slick({
-		dots: true,
-		arrows: false,
-		speed: 300,
-		slidesToShow: 1,
-		slidesToScroll: 1
-		});
-		// EOF CAROUSEl
+	// Menu scripts
+	if ($('.side-menu .nav-collapse').hasClass('collapsed')) {
+		$('body').addClass('open-menu');
 	}
+
+	$('.navbar-side-btn').on('click', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		/* Act on the event */
+		$('body').toggleClass('open-menu');
+		$('.side-menu .nav-collapse').toggleClass('collapsed');
+		//$('.side-menu .nav-collapse').toggle("slide");
+	});
 
 	// Select all links with hashes
 	$('a[href*="#"]')

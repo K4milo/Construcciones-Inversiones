@@ -43,6 +43,9 @@ function bst_enqueues() {
 	wp_register_script('bst-js', get_template_directory_uri() . '/js/bst.js', false, null, true);
 	wp_enqueue_script('bst-js');
 
+	wp_register_script('general-js', get_template_directory_uri() . '/js/general.js', false, null, true);
+	wp_enqueue_script('general-js');
+
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}

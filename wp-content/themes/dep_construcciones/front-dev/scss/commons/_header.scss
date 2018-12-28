@@ -1,47 +1,161 @@
 body {
 
-	.navbar {
-		// brand
-		.navbar-brand {
-			display: none;
-			overflow: hidden;
-			vertical-align: middle;
-			background-image: url('../img/logos/logo.png');
-			float: none;
-			width: 235px;
-			height: 61px;
-			text-indent: -9999999px;
-			margin: em(20) auto;
-			@include desktop {
-				
+	//when is opened
+	&.open-menu {
+		.side-menu {
+			//the button
+			.nav-header{
+				.navbar-side-btn {
+					left: 227px;
+					transition: all ease-in 0.3s;
+					@include mobile {
+						left: 0;
+					}
+				}
 			}
-			@include smdesktop {
-				
-			}
-			//left menu
-			@include tablet {
-				
+			.nav-collapse {
+				left: 0;
+				transition: all ease-in 0.3s;
 			}
 		}
-
-		// Min Navigation styles
-		#navbar {
-			@include mobile {
-				
-			}
-			//left menu
-			@include desktop {
-				
-			}
+	}
+	//brand
+	.the-logo {
+		position: absolute;
+		z-index: 10;
+		top: 57px;
+		left: 53px;
+		img{
+			max-width: 100%;
 		}
-		
-		// mobile button
-		.navbar-toggle {
-			
-			span {
-				&.icon-bar {
+		@include mobile {
+			position: fixed;
+			z-index: 14;
+			top: 10px;
+			left: 44%;
+			width: 46px;
+		}
+	}
+	//The menu default
+	.side-menu {
+		position: fixed;
+		height: 100%;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		//the button
+		.nav-header{
+			.navbar-side-btn {
+				position: fixed;
+				width: 50px;
+				height: 50px;
+				z-index: 2;
+				border: none;
+				background-color: $red;
+				border: none;
+				top: 50%;
+				left: 0;
+				margin-top: -30px;
+				transition: all ease-out 0.5s;
+				@include mobile{
+					top: 0;
+					margin-top: 0;						
+					width: 100%;
+				}
+				span {
+					display: block;
+					width: 90%;
+					max-width: 34px;
+					height: 4px;
+					margin: 7px auto;
 					background-color: $white;
-					height: em(3);
+					@include mobile {
+						margin: 7px;
+					}
+				}
+			}
+		}
+		.nav-collapse {
+			width: 227px;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: -227px;
+			transition: all ease-out 0.5s;
+			background-color: $op_red;
+			.navbar-brand {
+				float: none;
+				position: relative;
+				z-index: 20;
+				img {
+					display: block;
+					max-width: 100%;
+					margin: 2em auto 0;
+				}
+			}
+
+			.nav.navbar-nav,
+			#menu-menu-en-ingles,
+			#menu-menu-espanol{
+				padding: 0;
+				margin: 0;
+				float: none;
+				width: 100%;
+				li{
+					display: block;
+					width: 100%;
+					float: none;
+					a {
+						text-align: center;
+						text-transform: uppercase;
+						color: $white;
+						display: block;
+						width: 100%;
+						font-size: em(18);
+						font-family: $bold;
+						transition: all 0.4s;
+						&.active,
+						&:active,
+						&:focus,
+						&:hover{
+							border: none;
+							background-color: transparent;
+							color: $white;
+
+						}
+					}
+					&.active {
+						a {
+							border: none;
+							background-color: transparent;
+							color: $white;
+						}
+					}
+				}
+			}
+
+			.follow {
+				position: absolute;
+				z-index: 20;
+				bottom: 5%;
+				width: 100%;
+				@include mobile {
+					position: relative;
+					bottom: inherit;
+					margin-top: 2em;
+				}
+				ul{
+					padding: 0;
+					margin: 0;
+					text-align: center;
+					li{
+						display: inline-block;
+						margin: 0;
+						
+						a {
+							transition: all 0.3s;
+						}
+					}
 				}
 			}
 		}

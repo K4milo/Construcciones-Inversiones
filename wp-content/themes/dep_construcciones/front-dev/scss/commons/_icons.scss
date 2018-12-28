@@ -1,0 +1,48 @@
+@mixin pointer($width,$height) {
+	background-image: url('../images/icons/pointer.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin bath($width,$height) {
+	background-image: url('../images/icons/bath.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin bed($width,$height) {
+	background-image: url('../images/icons/bed.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin plus($width,$height) {
+	background-image: url('../images/icons/plus.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin prev($width,$height) {
+	background-image: url('../images/icons/prev.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin next($width,$height) {
+	background-image: url('../images/icons/next.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin m2($width,$height) {
+	background-image: url('../images/icons/m2.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}

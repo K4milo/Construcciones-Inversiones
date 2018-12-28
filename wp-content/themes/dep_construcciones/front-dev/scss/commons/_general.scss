@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; 
-  a {
+  a,button,.btn {
     transition: all 0.3s;
     &:hover{
       transition: all 0.3s;
@@ -14,6 +14,13 @@ body {
     }
   }
   
+  h1,h2,h3,h4,h5 {
+    font-family: $bold;
+  }
+
+  p {
+   font-family: $regular; 
+  }
 
   img {
     max-width: 100%;
@@ -22,7 +29,29 @@ body {
   iframe {
     max-width: 100%;
   }
-
+  
+  // Buttons
+  .more-btn {
+    display: inline-block;
+    padding: em(6) em(15) em(6) em(40);
+    font-family: $g-bold;
+    font-size: em(20);
+    color: $white;
+    background-color: $red;
+    border-radius: em(12);
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      @include plus(30px,30px);
+    }
+    &:hover {
+      background-color: $op_red;
+    }
+  }
   
 
   //Modal sltyle

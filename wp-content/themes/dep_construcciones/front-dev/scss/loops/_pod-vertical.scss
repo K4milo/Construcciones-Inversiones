@@ -1,0 +1,77 @@
+article {
+	&.pod_vertical {
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 0 em(10) $grey-2;
+		display: block;
+		margin: em(20) em(10);
+		figure {
+			&.thumb {
+				width: 100%;
+				height: em(350);
+				@include bgcover;
+				@include sm {
+					height: em(250);
+				}
+				img {
+					display: none;
+				}
+			}
+		}
+		.caption {
+			padding: em(10);
+			background-color: $white;
+			h4 {
+				color: $red;
+				font-family: $g-bold;
+				font-size: em(25);
+			}
+			.metadata {
+				ul {
+					padding: 0 0 0 0;
+					li {
+						display: inline-block;
+						font-family: $bold;
+						font-size: em(25);
+						@include sm {
+							margin-right: em(10);
+						}
+						.icon {
+							display: inline-block;
+							overflow: hidden;
+							text-indent: -9999999px;
+							vertical-align: middle;
+						}
+
+						&.ubicacion {
+							.icon {
+								@include pointer(30px,30px);
+							}
+						}
+						&.metros {
+							.icon {
+								@include m2(30px,30px);
+							}
+						}
+						&.banos {
+							.icon {
+								@include bath(30px,30px);
+							}
+						}
+						&.habs {
+							.icon {
+								@include bed(30px,30px);
+							}
+						}
+					}
+				}
+			}
+
+			.price {
+				font-family: $bold;
+				font-size: em(42);
+				margin: em(5) 0;
+			}
+		}
+	}
+}

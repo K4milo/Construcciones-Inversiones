@@ -1,0 +1,41 @@
+.block-client--links {
+	width: 100%;
+	position: relative;
+	min-height: 100vh;
+	@include bgparallax;
+	background-image: url('../images/bg/clients-zone.jpg');
+	text-align: center;
+	h3 {
+		font-size: em(40);
+		margin: em(10) auto;
+		color: $red;
+		@include sm {
+			margin: em(20) auto em(30);
+			font-size: em(60);	
+		}
+	}
+
+	figure {
+		display: block;
+		img {
+			max-width: 90%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	a {
+		display: inline-block;
+		font-family: $g-bold;
+		background-color: $white;
+		color: $black;
+		border-radius: em(12);
+		padding: em(12) em(16);
+		text-align: center;
+		box-shadow: 0 0 em(10) $black;
+		&:hover {
+			background-color: $red;
+			color: $white;
+		}
+	}
+}

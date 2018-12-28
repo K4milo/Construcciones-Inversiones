@@ -5,19 +5,23 @@
 @import "commons/variables";
 @import "commons/fonts";
 @import "commons/mixins";
+@import "commons/icons";
 @import "commons/general";
 @import "commons/header";
 @import "commons/footer";
 
-//sections
+// Blocks
+@import "blocks/home/hero-search";
+@import "blocks/home/client-links";
 
-//Vendors
+// Vendors
 
 @import "vendors/_slick"; 
 @import "../node_modules/font-awesome/scss/font-awesome";
 
 //Pages
+@import "pages/home";
 
 //loops
-
-// Universal Blocks
+@import "loops/pod-vertical";
+@import "loops/pod-horizontal";
