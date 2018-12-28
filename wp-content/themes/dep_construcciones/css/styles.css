@@ -249,10 +249,54 @@ body .side-menu {
           body .side-menu .nav-collapse .follow ul li a {
             transition: all 0.3s; }
 
+footer {
+  clear: both;
+  float: none;
+  overflow: hidden;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; }
+  footer.container-fluid {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0; }
+    footer.container-fluid .row {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0; }
+      footer.container-fluid .row.pre-footer {
+        clear: both;
+        float: none;
+        overflow: hidden;
+        padding: 2.5em 0;
+        width: 100%;
+        position: relative;
+        height: auto;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center top;
+        margin: 0 0 0 0;
+        background-image: url("../images/bg/bg-prefooter.jpg"); }
+        footer.container-fluid .row.pre-footer .widget_text {
+          text-align: left;
+          color: #ffffff; }
+          footer.container-fluid .row.pre-footer .widget_text p {
+            text-align: left; }
+      footer.container-fluid .row.copyright ul {
+        padding: 0.625em;
+        text-align: center; }
+        footer.container-fluid .row.copyright ul li {
+          display: block;
+          color: #000000; }
+          @media (min-width: 1024px) {
+            footer.container-fluid .row.copyright ul li {
+              display: inline-block;
+              width: 32%; } }
+          footer.container-fluid .row.copyright ul li a {
+            color: #000000; }
+
 .block-hero--search {
   width: 100%;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 700px;
   background-attachment: fixed;
   background-size: cover;
   background-position: center top;
@@ -313,12 +357,16 @@ body .side-menu {
 .block-client--links {
   width: 100%;
   position: relative;
-  min-height: 100vh;
+  height: auto;
   background-attachment: fixed;
   background-size: cover;
   background-position: center top;
   background-image: url("../images/bg/clients-zone.jpg");
   text-align: center; }
+  @media (min-width: 1024px) {
+    .block-client--links {
+      height: 100vh;
+      max-height: 600px; } }
   .block-client--links h3 {
     font-size: 2.5em;
     margin: 0.625em auto;
@@ -345,6 +393,99 @@ body .side-menu {
     .block-client--links a:hover {
       background-color: #E43834;
       color: #ffffff; }
+
+.block--quotes {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  background-image: url("../images/bg/bg-coffee.jpg");
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .block--quotes {
+      height: 100vh;
+      max-height: 600px; } }
+  .block--quotes h2 {
+    font-size: 2.5em;
+    margin: 0.625em auto 0.625em;
+    color: #E43834; }
+    @media (min-width: 1024px) {
+      .block--quotes h2 {
+        font-size: 3.75em; } }
+  .block--quotes p {
+    display: block;
+    max-width: 37.5em;
+    margin: 2.0625em auto; }
+    @media (min-width: 1024px) {
+      .block--quotes p {
+        font-size: 1.875em; } }
+  .block--quotes a {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #E43834;
+    border: none;
+    border-radius: 10px;
+    font-family: "Century Gothic Bold";
+    color: #ffffff; }
+
+.block--form {
+  width: 100%;
+  position: relative;
+  padding: 1.875em 0;
+  background-color: #dfe3e9;
+  text-align: center; }
+  .block--form h3 {
+    font-size: 1.25em;
+    margin: 0.625em auto 0;
+    color: #E43834; }
+    @media (min-width: 1024px) {
+      .block--form h3 {
+        margin: 1.25em auto 0.625em;
+        font-size: 2.5em; } }
+  .block--form form {
+    width: 100%;
+    max-width: 37.5em;
+    margin: 1.25em auto; }
+    .block--form form p input[type="submit"] {
+      padding: 10px 25px;
+      background-color: #E43834;
+      border: none;
+      border-radius: 10px;
+      font-family: "Century Gothic Bold";
+      color: #ffffff; }
+
+.sideform h3 {
+  text-align: left;
+  font-size: 1.25em;
+  margin: 0.625em 0;
+  color: #E43834; }
+  @media (min-width: 1024px) {
+    .sideform h3 {
+      font-size: 1.875em; } }
+
+.sideform form {
+  padding: 0.625em;
+  position: relative;
+  margin-bottom: 2.5em; }
+  .sideform form ul {
+    padding: 0.625em; }
+    .sideform form ul li {
+      display: block;
+      margin: 0.75em 0; }
+      .sideform form ul li input[type="number"] {
+        display: block;
+        margin: 0.75em 0;
+        width: 100%;
+        padding: 0.625em; }
+  .sideform form button[type="submit"] {
+    padding: 10px 25px;
+    background-color: #E43834;
+    border: none;
+    border-radius: 10px;
+    font-family: "Century Gothic Bold";
+    color: #ffffff; }
 
 /* Slider */
 .slick-slider {
@@ -2915,7 +3056,7 @@ article.pod_vertical {
       article.pod_vertical .caption .metadata ul li {
         display: inline-block;
         font-family: "Bebas Neue";
-        font-size: 1.5625em; }
+        font-size: 1.25em; }
         @media (min-width: 1024px) {
           article.pod_vertical .caption .metadata ul li {
             margin-right: 0.625em; } }
@@ -2948,3 +3089,94 @@ article.pod_vertical {
       font-family: "Bebas Neue";
       font-size: 2.625em;
       margin: 0.3125em 0; }
+
+article.pod_horizontal {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0.625em #434343;
+  display: block;
+  margin: 1.25em 0.625em; }
+  @media (min-width: 1024px) {
+    article.pod_horizontal {
+      display: flex; } }
+  article.pod_horizontal figure.thumb {
+    width: 100%;
+    height: 21.875em;
+    background-size: cover;
+    background-position: center center; }
+    @media (min-width: 1024px) {
+      article.pod_horizontal figure.thumb {
+        width: 45%;
+        height: auto; } }
+    article.pod_horizontal figure.thumb img {
+      display: none; }
+  article.pod_horizontal .caption {
+    padding: 0.625em;
+    background-color: #ffffff; }
+    @media (min-width: 1024px) {
+      article.pod_horizontal .caption {
+        padding: 0.9375em 1.25em;
+        width: 55%;
+        min-height: 21.875em; } }
+    article.pod_horizontal .caption h4 {
+      color: #E43834;
+      font-family: "Century Gothic Bold";
+      font-size: 1.5625em; }
+    article.pod_horizontal .caption .metadata ul {
+      padding: 0 0 0 0; }
+      article.pod_horizontal .caption .metadata ul li {
+        display: inline-block;
+        font-family: "Bebas Neue";
+        font-size: 1.25em; }
+        @media (min-width: 1024px) {
+          article.pod_horizontal .caption .metadata ul li {
+            margin-right: 0.625em; } }
+        article.pod_horizontal .caption .metadata ul li .icon {
+          display: inline-block;
+          overflow: hidden;
+          text-indent: -9999999px;
+          vertical-align: middle; }
+        article.pod_horizontal .caption .metadata ul li.ubicacion .icon {
+          background-image: url("../images/icons/pointer.svg");
+          background-size: 100% 100%;
+          width: 30px;
+          height: 30px; }
+        article.pod_horizontal .caption .metadata ul li.metros .icon {
+          background-image: url("../images/icons/m2.svg");
+          background-size: 100% 100%;
+          width: 30px;
+          height: 30px; }
+        article.pod_horizontal .caption .metadata ul li.banos .icon {
+          background-image: url("../images/icons/bath.svg");
+          background-size: 100% 100%;
+          width: 30px;
+          height: 30px; }
+        article.pod_horizontal .caption .metadata ul li.habs .icon {
+          background-image: url("../images/icons/bed.svg");
+          background-size: 100% 100%;
+          width: 30px;
+          height: 30px; }
+    article.pod_horizontal .caption .price {
+      font-family: "Bebas Neue";
+      font-size: 2.625em;
+      margin: 0.3125em 0; }
+
+.loop-clientes h3 {
+  font-size: 1.25em;
+  margin: 0.625em auto 0;
+  color: #E43834;
+  position: relative;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .loop-clientes h3 {
+      margin: 1.875em auto 0.625em;
+      font-size: 3.75em; } }
+
+.loop-clientes ul {
+  padding: 1.875em 0; }
+  .loop-clientes ul li {
+    display: block; }
+    .loop-clientes ul li img {
+      display: block;
+      max-width: 60%;
+      margin: 0 auto; }

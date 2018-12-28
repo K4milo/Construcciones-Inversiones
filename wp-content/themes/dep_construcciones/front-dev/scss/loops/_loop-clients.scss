@@ -1,0 +1,25 @@
+.loop-clientes {
+	h3 {
+		font-size: em(20);
+		margin: em(10) auto 0;
+		color: $red;
+		position: relative;
+		text-align: center;
+		@include sm {
+			margin: em(30) auto em(10);
+			font-size: em(60);
+		}
+	}
+
+	ul {
+		padding: em(30) 0;
+		li {
+			display: block;
+			img {
+				display: block;
+				max-width: 60%;
+				margin: 0 auto; 
+			}
+		}
+	}
+}

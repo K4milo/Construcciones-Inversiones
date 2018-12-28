@@ -72,6 +72,15 @@ $browser-context: 16; // Default
   }
 }
 
+@mixin buttonRed {
+  padding: 10px 25px;
+  background-color: $red;
+  border: none;
+  border-radius: 10px;
+  font-family: $g-bold;
+  color: $white;
+}
+
 
 @mixin placeholder ($color) {
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */

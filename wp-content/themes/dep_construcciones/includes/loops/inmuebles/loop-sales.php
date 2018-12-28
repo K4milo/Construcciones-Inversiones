@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/dep_construcciones/includes/results/php-logic.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/dep_construcciones/includes/results/php-logic-sale.php';
 
 if($query->have_posts()): 
 

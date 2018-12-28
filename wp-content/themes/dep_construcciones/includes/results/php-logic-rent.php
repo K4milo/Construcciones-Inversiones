@@ -1,33 +1,14 @@
 <?php
 	
 	// Post Variables
-	$from_home = $_POST['from-home'];
+	$from_tax = $_POST['from-tax'];
 	$type = $_POST['type'];
 	$business = $_POST['business'];
 	$area = $_POST['area'];
 	
 	$args = [];
 
-	if($from_home == 1){
-		$args = array (
-			'post_type' => 'inmueble',
-			'posts_per_page' => -1,
-			'tax_query' => array(
-				'relation' => 'AND',
-			    array(
-			        'taxonomy' => 'tipos',
-			        'terms' => $type,
-			        'field' => 'slug'
-			    ),
-			    array(
-			        'taxonomy' => 'transacciones',
-			        'terms' => $business,
-			        'field' => 'slug'
-			    )
-			),
-		);
-
-	} elseif ($from_home == 0) {
+	if($from_tax){
 
 		$area_r = $_POST['area-range'];
 		$zone = $_POST['zone'];
@@ -53,7 +34,7 @@
 			    ),
 			    array(
 			        'taxonomy' => 'transacciones',
-			        'terms' => $business,
+			        'terms' => 'arriendo',
 			        'field' => 'slug'
 			    ),
 			    array(
@@ -83,11 +64,21 @@
 				),
 			)
 		);
+
 	} else {
-		$args = array(
+
+		$args = array (
 			'post_type' => 'inmueble',
-			'posts_per_page' => -1
+			'posts_per_page' => -1,
+			'tax_query' => array(
+			    array(
+			        'taxonomy' => 'transacciones',
+			        'terms' => 'arriendo',
+			        'field' => 'slug'
+			    )
+			),
 		);
+		
 	}
 	
 	$query = new WP_Query($args);

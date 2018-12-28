@@ -2,40 +2,32 @@
 
 	// Slick slider for carousel
 
-	var carousel_pods = $('.carousel-pods'),
-		dblue_carousel = $('.dark-carousel');
+	var carousel_pods    = $('.carousel-pods'),
+		carousel_clients = $('.loop-clientes ul');
 
 	if(carousel_pods) {
 
 		carousel_pods.slick({
-		dots: false,
-		arrows: true,
-		infinite: false,
-		speed: 300,
-		slidesToShow: 3,
-		slidesToScroll: 3,
-		responsive: 
+			dots: false,
+			arrows: true,
+			infinite: false,
+			speed: 300,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			responsive: 
 			[
 				{
 					breakpoint: 1024,
 					settings: {
-						infinite: true,
-						arrows: false,
 						slidesToScroll: 2,
-						centerMode: true,
 						speed: 300,
 						slidesToShow: 2,
-
 					}
 				},
 				{
 					breakpoint: 480,
 					settings: {
-						infinite: true,
-						arrows: true,
-						dots: false,
 						slidesToScroll: 1,
-						centerMode: true,
 						speed: 300,
 						slidesToShow: 1,
 					}
@@ -43,6 +35,36 @@
 			]
 		});
 		// EOF CAROUSEL
+	}
+
+	if(carousel_clients) {
+		carousel_clients.slick({
+			dots: false,
+			arrows: true,
+			infinite: false,
+			speed: 300,
+			slidesToShow: 6,
+			slidesToScroll: 6,
+			responsive: 
+			[
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToScroll: 4,
+						speed: 300,
+						slidesToShow: 4,
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToScroll: 1,
+						speed: 300,
+						slidesToShow: 1,
+					}
+				}
+			]
+		});
 	}
 
 	// Menu scripts

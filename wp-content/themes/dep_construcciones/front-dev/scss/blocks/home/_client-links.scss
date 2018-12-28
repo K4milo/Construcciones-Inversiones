@@ -1,10 +1,14 @@
 .block-client--links {
 	width: 100%;
 	position: relative;
-	min-height: 100vh;
+	height: auto;
 	@include bgparallax;
 	background-image: url('../images/bg/clients-zone.jpg');
 	text-align: center;
+	@include sm {
+		height: 100vh;
+		max-height: 600px;
+	}
 	h3 {
 		font-size: em(40);
 		margin: em(10) auto;

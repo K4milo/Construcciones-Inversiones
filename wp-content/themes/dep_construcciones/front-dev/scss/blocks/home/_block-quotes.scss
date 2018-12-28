@@ -1,0 +1,33 @@
+.block--quotes {
+	width: 100%;
+	position: relative;
+	height: auto;
+	@include bgparallax;
+	background-image: url('../images/bg/bg-coffee.jpg');
+	text-align: center;
+	@include sm {
+		height: 100vh;
+		max-height: 600px;
+	}
+	h2 {
+		font-size: em(40);
+		margin: em(10) auto em(10);
+		color: $red;
+		@include sm {
+			font-size: em(60);	
+		}
+	}
+	p {
+		display: block;
+		max-width: em(600);
+		margin: em(33) auto;
+		@include sm {
+			font-size: em(30);
+		}
+	}
+
+	a {
+		display: inline-block;
+		@include buttonRed;
+	}
+}

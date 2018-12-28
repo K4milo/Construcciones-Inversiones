@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/dep_construcciones/includes/results/php-logic.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/dep_construcciones/includes/results/php-logic-rent.php';
 
 if($query->have_posts()): 
 
@@ -70,5 +70,4 @@ if($query->have_posts()):
 </main>
 <?php 
 	endif; 
-	wp_reset_query(); 
-
+	wp_reset_query();

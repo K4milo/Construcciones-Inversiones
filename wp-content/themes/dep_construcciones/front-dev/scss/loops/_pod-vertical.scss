@@ -32,7 +32,7 @@ article {
 					li {
 						display: inline-block;
 						font-family: $bold;
-						font-size: em(25);
+						font-size: em(20);
 						@include sm {
 							margin-right: em(10);
 						}

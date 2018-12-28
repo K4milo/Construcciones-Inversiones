@@ -1,5 +1,86 @@
 article {
 	&.pod_horizontal {
-		
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 0 em(10) $grey-2;
+		display: block;
+		margin: em(20) em(10);
+		@include sm {
+			display: flex;
+		}
+		figure {
+			&.thumb {
+				width: 100%;
+				height: em(350);
+				@include bgcover;
+				@include sm {
+					width: 45%;
+					height: auto;
+				}
+				img {
+					display: none;
+				}
+			}
+		}
+		.caption {
+			padding: em(10);
+			background-color: $white;
+			@include sm {
+				padding: em(15) em(20);
+				width: 55%;
+				min-height: em(350);
+			}
+			h4 {
+				color: $red;
+				font-family: $g-bold;
+				font-size: em(25);
+			}
+			.metadata {
+				ul {
+					padding: 0 0 0 0;
+					li {
+						display: inline-block;
+						font-family: $bold;
+						font-size: em(20);
+						@include sm {
+							margin-right: em(10);
+						}
+						.icon {
+							display: inline-block;
+							overflow: hidden;
+							text-indent: -9999999px;
+							vertical-align: middle;
+						}
+
+						&.ubicacion {
+							.icon {
+								@include pointer(30px,30px);
+							}
+						}
+						&.metros {
+							.icon {
+								@include m2(30px,30px);
+							}
+						}
+						&.banos {
+							.icon {
+								@include bath(30px,30px);
+							}
+						}
+						&.habs {
+							.icon {
+								@include bed(30px,30px);
+							}
+						}
+					}
+				}
+			}
+
+			.price {
+				font-family: $bold;
+				font-size: em(42);
+				margin: em(5) 0;
+			}
+		}
 	}
 }

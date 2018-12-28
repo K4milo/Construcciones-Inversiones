@@ -18,6 +18,9 @@ $tax_term_children = get_term_children( $tax_term_id, $tax_taxonomy_name );
 
 ?>
 <aside class="sideform col-md-4">
+	<header>
+		<h3>Filtrar Inmuebles</h3>
+	</header>
 	<form action="<?php the_permalink(); ?>" method="POST">
 		<ul>
 			<li>
