@@ -67,6 +67,32 @@
 		});
 	}
 
+	// Carousel inmuebles
+
+	var galleryWrapper = $('.gallery-wrapper'),
+		gallery_view   = galleryWrapper.find('.gallery-loop'),
+		gallery_rows   = gallery_view.find('.gallery-item');
+
+	
+	if(!gallery_view.hasClass('slick-initialized')) {
+
+		var params_slider = {
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			dots: true,
+			customPaging : function(slider, i) {
+				var thumb = $(slider.$slides[i]).find('.gallery-item').data('thumb');
+				return '<figure class="thumb-pager" style="background-image: url('+thumb+')">';
+			}
+		}
+
+		// slider object
+		var slider_gallery = gallery_view.slick(params_slider);
+
+	}
+
+
 	// Menu scripts
 	if ($('.side-menu .nav-collapse').hasClass('collapsed')) {
 		$('body').addClass('open-menu');

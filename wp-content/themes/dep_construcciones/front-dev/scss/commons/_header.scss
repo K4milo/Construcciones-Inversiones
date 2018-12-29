@@ -6,10 +6,10 @@ body {
 			//the button
 			.nav-header{
 				.navbar-side-btn {
-					left: 227px;
+					left: 0;
 					transition: all ease-in 0.3s;
-					@include mobile {
-						left: 0;
+					@include sm {
+						left: 426px;
 					}
 				}
 			}
@@ -76,11 +76,12 @@ body {
 			}
 		}
 		.nav-collapse {
-			width: 227px;
+			max-width: 426px;
+			width: 70%;
 			height: 100%;
 			position: fixed;
 			top: 0;
-			left: -227px;
+			left: -426px;
 			transition: all ease-out 0.5s;
 			background-color: $op_red;
 			.navbar-brand {
@@ -89,41 +90,64 @@ body {
 				z-index: 20;
 				img {
 					display: block;
-					max-width: 100%;
-					margin: 2em auto 0;
+					max-width: 80%;
+					margin: em(50) auto em(20);
+					@include sm{
+						margin: em(35) auto em(50);
+					}
 				}
 			}
 
-			.nav.navbar-nav,
-			#menu-menu-en-ingles,
-			#menu-menu-espanol{
+			.menu{
 				padding: 0;
-				margin: 0;
+				margin: 0  auto;
 				float: none;
-				width: 100%;
-				li{
+				width: 80%;
+				> li {
 					display: block;
 					width: 100%;
 					float: none;
 					a {
-						text-align: center;
 						text-transform: uppercase;
 						color: $white;
 						display: block;
 						width: 100%;
-						font-size: em(18);
+						font-size: em(28);
 						font-family: $bold;
 						transition: all 0.4s;
 						&.active,
 						&:active,
 						&:focus,
-						&:hover{
+						&:hover {
 							border: none;
 							background-color: transparent;
 							color: $white;
-
+						}
+						@include sm {
+							font-size: em(40);
 						}
 					}
+					.dropdown-menu {
+					    position: inherit;
+					    top: inherit;
+					    float: none;
+					    font-size: inherit;
+					    background-color: transparent;
+					    background-clip: inherit;
+					    border: none;
+					    border-radius: inherit;
+					    box-shadow: none;
+					    li {
+					    	a {
+								font-family: $regular;
+								font-size: em(20);
+								@include sm {
+									font-size: em(30);
+								}
+					    	}
+					    }
+					}
+
 					&.active {
 						a {
 							border: none;
@@ -142,7 +166,7 @@ body {
 				@include mobile {
 					position: relative;
 					bottom: inherit;
-					margin-top: 2em;
+					margin-top: 6em;
 				}
 				ul{
 					padding: 0;
@@ -150,10 +174,23 @@ body {
 					text-align: center;
 					li{
 						display: inline-block;
-						margin: 0;
+						margin: 0 em(5);
 						
 						a {
 							transition: all 0.3s;
+							display: block;
+							width: em(30);
+							height: em(30);
+							border-radius: 100%;
+							background-color: $white;
+							color: $red;
+							text-align: center;
+							line-height: em(30);
+							font-size: em(18);
+							&:hover {
+								background-color: $red;
+								color: $white;
+							}
 						}
 					}
 				}

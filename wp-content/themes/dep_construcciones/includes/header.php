@@ -3,6 +3,7 @@
 <head>
 	<title><?php wp_title('•', true, 'right'); bloginfo('name'); ?></title>
 	<meta charset="utf-8">
+  <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/favicon.png" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
@@ -33,16 +34,16 @@
         wp_nav_menu( array(
             'theme_location'    => 'navbar-left',
             'depth'             => 2,
-            'menu_class'        => 'nav navbar-nav'));
+            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'walker'            => new wp_bootstrap_navwalker())
+        );
       ?>
 
       <div class="follow">
         <ul>
-          <li><a href="#" class="social-icn fb" target="_blank">Facebook</a></li>
-          <li><a href="#" class="social-icn tw" target="_blank">Twitter</a></li>
-          <li><a href="#" class="social-icn yt" target="_blank">Youtube</a></li>
-          <li><a href="#" class="social-icn in" target="_blank">Instagram</a></li>
-          <li><a href="#" class="social-icn lin" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/cinversiones/" class="social-icn fb" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/construye_SAS" class="social-icn tw" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/construyeinversiones/" class="social-icn ins" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         </ul>
       </div>
   </div><!-- /.navbar-collapse -->

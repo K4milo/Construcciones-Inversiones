@@ -1,0 +1,39 @@
+.gallery-loop {
+	width: 100%;
+	.gallery-item {
+		position: relative;
+		width: 100%;
+		height: em(350);
+		@include bgcover;
+		@include sm{
+			height: em(600);
+		}
+		figure {
+			display: none;
+		}
+	}
+
+	.slick-dots {
+		position: relative;
+		margin: em(25) auto;
+		bottom: inherit;
+		li {
+			width: em(40);
+			height: em(40);
+			@include sm{
+				width: em(60);
+				height: em(60);
+			}
+			figure {
+				display: block;
+				width: em(40);
+				height: em(40);
+				@include sm{
+					width: em(60);
+					height: em(60);
+				}
+				@include bgcover;
+			}
+		}
+	}
+}

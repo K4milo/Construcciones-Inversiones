@@ -5,7 +5,7 @@
 	$type = $_POST['type'];
 	$business = $_POST['business'];
 	$area = $_POST['area'];
-	
+	$zone = $_POST['zone'];
 	$args = [];
 
 	if($from_home == 1){
@@ -23,6 +23,11 @@
 			        'taxonomy' => 'transacciones',
 			        'terms' => $business,
 			        'field' => 'slug'
+			    ),
+			    array(
+			        'taxonomy' => 'ubicacion',
+			        'terms' => $zone,
+			        'field' => 'slug'
 			    )
 			),
 		);
@@ -30,7 +35,6 @@
 	} elseif ($from_home == 0) {
 
 		$area_r = $_POST['area-range'];
-		$zone = $_POST['zone'];
 		$baths = $_POST['baths'];
 		$rooms = $_POST['rooms'];
 		$price_1 = $_POST['price1'];
@@ -65,6 +69,11 @@
 			        'taxonomy' => 'habitaciones',
 			        'terms' => $rooms,
 			        'field' => 'name'
+			    ),
+			    array(
+			        'taxonomy' => 'ubicacion',
+			        'terms' => $zone,
+			        'field' => 'slug'
 			    )
 			),
 			'meta_query' => array(
