@@ -1,16 +1,15 @@
 <?php get_template_part('includes/header'); ?>
-
+<?php 
+  // Hero Banner
+  get_template_part('includes/commons/block','title-hero');
+?>
 <div class="container">
   <div class="row">
     
-    <div class="col-xs-12 col-sm-8">
+    <div class="single-wrapper">
       <div id="content" role="main">
         <?php get_template_part('includes/loops/content', 'single'); ?>
       </div><!-- /#content -->
-    </div>
-    
-    <div class="col-xs-6 col-sm-4" id="sidebar" role="navigation">
-        <?php get_template_part('includes/sidebar'); ?>
     </div>
     
   </div><!-- /.row -->
