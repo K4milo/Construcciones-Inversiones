@@ -10,7 +10,7 @@
 		color: $red;
 		@include sm {
 			margin: em(20) auto em(10);
-			font-size: em(40);
+			font-size: em(60);
 		}
 	}
 	form {
@@ -20,6 +20,7 @@
 		p {
 			input {
 				&[type="submit"] {
+					margin-top: em(40);
 					@include buttonRed;
 				}
 			}
@@ -59,6 +60,7 @@
 		}
 		button {
 			&[type="submit"] {
+				margin-top: em(40);
 				@include buttonRed;
 			}
 		}

@@ -124,7 +124,7 @@ body {
 							color: $white;
 						}
 						@include sm {
-							font-size: em(40);
+							font-size: em(30);
 						}
 					}
 					.dropdown-menu {
@@ -140,9 +140,9 @@ body {
 					    li {
 					    	a {
 								font-family: $regular;
-								font-size: em(20);
+								font-size: em(17);
 								@include sm {
-									font-size: em(30);
+									font-size: em(20);
 								}
 					    	}
 					    }

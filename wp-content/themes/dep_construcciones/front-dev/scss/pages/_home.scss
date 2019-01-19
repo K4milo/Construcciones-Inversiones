@@ -5,6 +5,7 @@ body {
 				font-size: em(20);
 				margin: em(10) auto 0;
 				color: $red;
+				text-align: center;
 				@include sm {
 					margin: em(20) auto em(10);
 					font-size: em(40);

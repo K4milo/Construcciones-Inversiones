@@ -22,9 +22,32 @@ footer {
 				@include bgparallax;
 				margin: 0 0 0 0;
 				background-image: url('../images/bg/bg-prefooter.jpg');
+				@include sm {
+					overflow: hidden;
+				}
+				
+				video {
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 143%;
+					@include sm {
+						display: block;
+					}
+				}
+
 				.widget_text {
 					text-align: left;
 					color: $white;
+					h4 {
+						display: none;
+					}
+					img {
+						display: inline-block;
+						max-width: 300px;
+						height: auto;
+					}
 					p {
 						text-align: left;
 					}

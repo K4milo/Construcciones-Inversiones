@@ -9,7 +9,7 @@
 
 		$args = array(
 			'post_type' => 'inmueble',
-			'posts_per_page' => -1
+			'posts_per_page' => 10
 		);
 
 		$query = new WP_Query($args);
@@ -38,7 +38,6 @@
 				</figure>
 				<div class="caption">
 					<h4><?php the_title();?></h4>
-					<?php the_excerpt();?>
 					<div class="metadata">
 						<ul>
 							<?php if($ubicacion): ?>

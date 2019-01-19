@@ -12,7 +12,7 @@ body {
 					margin: em(10) auto em(10);
 					color: $black;
 					@include sm {
-						font-size: em(40);
+						font-size: em(60);
 						margin: em(10) 0;
 						font-size: em(60);	
 					}
@@ -21,7 +21,8 @@ body {
 			&.type-page{
 				text-align: center;
 				@include sm {
-					text-align: left;
+					text-align: justify;
+					font-size: em(20);
 				}
 			}
 			&.choose {
@@ -41,6 +42,10 @@ body {
 						}
 						h4 {
 							font-family: $g-bold;
+							font-size: em(20);
+						}
+						p {
+							font-size: em(20);	
 						}
 					}
 				}

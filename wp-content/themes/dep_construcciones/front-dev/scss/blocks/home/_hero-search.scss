@@ -1,8 +1,8 @@
 .block-hero--search {
 	width: 100%;
 	position: relative;
-	height: 100vh;
-	max-height: 700px;
+	min-height: 100vh;
+	//max-height: 1250px;
 	@include bgparallax;
 	background-image: url('../images/bg/bg-home.jpg');
 	text-align: center;
@@ -12,7 +12,7 @@
 		margin: em(90) auto 0;
 		max-width: 90%;
 		@include sm {
-			margin: em(220) auto 0;
+			margin: em(120) auto 0;
 		}
 	}
 	
@@ -20,7 +20,6 @@
 		font-size: em(40);
 		margin: em(10) auto em(10);
 		color: $black;
-		text-shadow: 0 0 em(6);
 		@include sm {
 			font-size: em(60);	
 		}

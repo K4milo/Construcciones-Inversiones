@@ -2,7 +2,7 @@ article {
 	&.pod_horizontal {
 		border-radius: 12px;
 		overflow: hidden;
-		box-shadow: 0 0 em(10) $grey-2;
+		border: 1px solid $grey-2;
 		display: block;
 		margin: em(20) em(10);
 		@include sm {

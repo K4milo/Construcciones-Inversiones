@@ -11,6 +11,7 @@ The Single Inmueble Loop
 
         $metros_cuadrados = get_field('metros_cuadrados');
         $precio_inmueble  = get_field('precio_inmueble');
+        $precio_admin  = get_field('precio_administracion');
         $galeria = get_field('galeria');
 
         // Taxonmy vars
@@ -54,6 +55,11 @@ The Single Inmueble Loop
                 </div>                            
             </div>
             <div class="content-wrapper col-md-4">
+                <div class="brand">
+                    <a href="/">
+                        <img src="<?php bloginfo('template_url')?>/images/logos/logo.png" alt="Construye inversiones"/>
+                    </a>
+                </div>
                 <div class="caption">
                     <?php the_content(); ?>
                 </div>
@@ -76,6 +82,21 @@ The Single Inmueble Loop
                 </div>
                 <div class="price">
                     <?php echo money_format('%(#1.0n', $precio_inmueble); ?>
+                </div>
+
+                <?php if($precio_admin): ?>
+
+                    <div class="price-admin">
+                        <h3>Precio Administración</h3>
+                        <div class="price">
+                            <?php echo money_format('%(#1.0n', $precio_admin); ?>
+                        </div>
+                    </div>
+                        
+                <?php endif; ?>
+
+                <div class="social-share">
+                    <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
                 </div>
             </div>
 

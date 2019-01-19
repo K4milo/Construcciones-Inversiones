@@ -21,6 +21,15 @@ body {
 					background-color: $grayBg;
 				}
 
+				.brand {
+					margin: 10px 0;
+					text-align: left;
+					img {
+						display: inline-block;
+						max-width: 300px;
+					}
+				}
+
 				.metadata {
 					ul {
 						background-color: $lgrey3;

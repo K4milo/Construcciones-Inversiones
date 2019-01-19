@@ -2,9 +2,12 @@ article {
 	&.pod_vertical {
 		border-radius: 12px;
 		overflow: hidden;
-		box-shadow: 0 0 em(10) $grey-2;
+		border: 1px solid $lgrey2;
 		display: block;
 		margin: em(20) em(10);
+		@include sm {
+			min-height: em(540);
+		}
 		figure {
 			&.thumb {
 				width: 100%;

@@ -59,7 +59,7 @@ body {
     font-family: "Century Gothic Bold";
     font-size: 1.25em;
     color: #ffffff;
-    background-color: #E43834;
+    background-color: #e43834;
     border-radius: 0.75em;
     position: relative; }
     body .more-btn:before {
@@ -73,7 +73,7 @@ body {
       width: 30px;
       height: 30px; }
     body .more-btn:hover {
-      background-color: rgba(228, 56, 52, 0.7); }
+      background-color: rgba(228, 56, 52, 0.88); }
   body .con-modal {
     display: none;
     background-color: rgba(0, 0, 0, 0.75);
@@ -150,7 +150,7 @@ body .side-menu {
     height: 50px;
     z-index: 2;
     border: none;
-    background-color: #E43834;
+    background-color: #e43834;
     border: none;
     top: 50%;
     left: 0;
@@ -179,7 +179,7 @@ body .side-menu {
     top: 0;
     left: -426px;
     transition: all ease-out 0.5s;
-    background-color: rgba(228, 56, 52, 0.7); }
+    background-color: rgba(228, 56, 52, 0.88); }
     body .side-menu .nav-collapse .navbar-brand {
       float: none;
       position: relative;
@@ -214,7 +214,7 @@ body .side-menu {
             color: #ffffff; }
           @media (min-width: 1024px) {
             body .side-menu .nav-collapse .menu > li a {
-              font-size: 2.5em; } }
+              font-size: 1.875em; } }
         body .side-menu .nav-collapse .menu > li .dropdown-menu {
           position: inherit;
           top: inherit;
@@ -227,10 +227,10 @@ body .side-menu {
           box-shadow: none; }
           body .side-menu .nav-collapse .menu > li .dropdown-menu li a {
             font-family: "Century Gothic";
-            font-size: 1.25em; }
+            font-size: 1.0625em; }
             @media (min-width: 1024px) {
               body .side-menu .nav-collapse .menu > li .dropdown-menu li a {
-                font-size: 1.875em; } }
+                font-size: 1.25em; } }
         body .side-menu .nav-collapse .menu > li.active a {
           border: none;
           background-color: transparent;
@@ -259,12 +259,12 @@ body .side-menu {
             height: 1.875em;
             border-radius: 100%;
             background-color: #ffffff;
-            color: #E43834;
+            color: #e43834;
             text-align: center;
             line-height: 1.875em;
             font-size: 1.125em; }
             body .side-menu .nav-collapse .follow ul li a:hover {
-              background-color: #E43834;
+              background-color: #e43834;
               color: #ffffff; }
 
 footer {
@@ -292,9 +292,27 @@ footer {
         background-position: center top;
         margin: 0 0 0 0;
         background-image: url("../images/bg/bg-prefooter.jpg"); }
+        @media (min-width: 1024px) {
+          footer.container-fluid .row.pre-footer {
+            overflow: hidden; } }
+        footer.container-fluid .row.pre-footer video {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 143%; }
+          @media (min-width: 1024px) {
+            footer.container-fluid .row.pre-footer video {
+              display: block; } }
         footer.container-fluid .row.pre-footer .widget_text {
           text-align: left;
           color: #ffffff; }
+          footer.container-fluid .row.pre-footer .widget_text h4 {
+            display: none; }
+          footer.container-fluid .row.pre-footer .widget_text img {
+            display: inline-block;
+            max-width: 300px;
+            height: auto; }
           footer.container-fluid .row.pre-footer .widget_text p {
             text-align: left; }
       footer.container-fluid .row.copyright ul {
@@ -336,8 +354,7 @@ footer {
 .block-hero--search {
   width: 100%;
   position: relative;
-  height: 100vh;
-  max-height: 700px;
+  min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: center top;
@@ -349,12 +366,11 @@ footer {
     max-width: 90%; }
     @media (min-width: 1024px) {
       .block-hero--search img {
-        margin: 13.75em auto 0; } }
+        margin: 7.5em auto 0; } }
   .block-hero--search h2 {
     font-size: 2.5em;
     margin: 0.625em auto 0.625em;
-    color: #000000;
-    text-shadow: 0 0 0.375em; }
+    color: #000000; }
     @media (min-width: 1024px) {
       .block-hero--search h2 {
         font-size: 3.75em; } }
@@ -388,7 +404,7 @@ footer {
         padding: 0.3125em 0.625em;
         font-size: 1.25em;
         color: #ffffff;
-        background-color: #E43834;
+        background-color: #e43834;
         border: none;
         border-radius: 0.75em;
         display: block;
@@ -411,7 +427,7 @@ footer {
   .block-client--links h3 {
     font-size: 2.5em;
     margin: 0.625em auto;
-    color: #E43834; }
+    color: #e43834; }
     @media (min-width: 1024px) {
       .block-client--links h3 {
         margin: 1.25em auto 1.875em;
@@ -432,7 +448,7 @@ footer {
     text-align: center;
     box-shadow: 0 0 0.625em #000000; }
     .block-client--links a:hover {
-      background-color: #E43834;
+      background-color: #e43834;
       color: #ffffff; }
 
 .block--quotes {
@@ -450,8 +466,8 @@ footer {
       max-height: 600px; } }
   .block--quotes h2 {
     font-size: 2.5em;
-    margin: 0.625em auto 0.625em;
-    color: #E43834; }
+    margin: 3.125em auto 0.625em;
+    color: #e43834; }
     @media (min-width: 1024px) {
       .block--quotes h2 {
         font-size: 3.75em; } }
@@ -461,11 +477,16 @@ footer {
     margin: 2.0625em auto; }
     @media (min-width: 1024px) {
       .block--quotes p {
-        font-size: 1.875em; } }
+        text-align: justify;
+        font-size: 1.25em; } }
   .block--quotes a {
-    display: inline-block;
+    display: block;
+    max-width: 11.25em;
+    text-align: center;
+    margin: 2.0625em auto;
+    border-radius: 0;
     padding: 10px 25px;
-    background-color: #E43834;
+    background-color: #e43834;
     border: none;
     border-radius: 10px;
     font-family: "Century Gothic Bold";
@@ -480,18 +501,19 @@ footer {
   .block--form h3 {
     font-size: 1.25em;
     margin: 0.625em auto 0;
-    color: #E43834; }
+    color: #e43834; }
     @media (min-width: 1024px) {
       .block--form h3 {
         margin: 1.25em auto 0.625em;
-        font-size: 2.5em; } }
+        font-size: 3.75em; } }
   .block--form form {
     width: 100%;
     max-width: 37.5em;
     margin: 1.25em auto; }
     .block--form form p input[type="submit"] {
+      margin-top: 2.5em;
       padding: 10px 25px;
-      background-color: #E43834;
+      background-color: #e43834;
       border: none;
       border-radius: 10px;
       font-family: "Century Gothic Bold";
@@ -501,7 +523,7 @@ footer {
   text-align: left;
   font-size: 1.25em;
   margin: 0.625em 0;
-  color: #E43834; }
+  color: #e43834; }
   @media (min-width: 1024px) {
     .sideform h3 {
       font-size: 1.875em; } }
@@ -521,8 +543,9 @@ footer {
         width: 100%;
         padding: 0.625em; }
   .sideform form button[type="submit"] {
+    margin-top: 2.5em;
     padding: 10px 25px;
-    background-color: #E43834;
+    background-color: #e43834;
     border: none;
     border-radius: 10px;
     font-family: "Century Gothic Bold";
@@ -3081,7 +3104,8 @@ footer {
 body.home .loop-inmuebles h3 {
   font-size: 1.25em;
   margin: 0.625em auto 0;
-  color: #E43834; }
+  color: #e43834;
+  text-align: center; }
   @media (min-width: 1024px) {
     body.home .loop-inmuebles h3 {
       margin: 1.25em auto 0.625em;
@@ -3115,14 +3139,15 @@ body.page-template-_about-tpl {
     color: #000000; }
     @media (min-width: 1024px) {
       body.page-template-_about-tpl article header h3 {
-        font-size: 2.5em;
+        font-size: 3.75em;
         margin: 0.625em 0;
         font-size: 3.75em; } }
   body.page-template-_about-tpl article.type-page {
     text-align: center; }
     @media (min-width: 1024px) {
       body.page-template-_about-tpl article.type-page {
-        text-align: left; } }
+        text-align: justify;
+        font-size: 1.25em; } }
   body.page-template-_about-tpl article.choose ul {
     padding: 0 0 0 0; }
     body.page-template-_about-tpl article.choose ul li {
@@ -3137,12 +3162,15 @@ body.page-template-_about-tpl {
       body.page-template-_about-tpl article.choose ul li img {
         max-width: 60%; }
       body.page-template-_about-tpl article.choose ul li h4 {
-        font-family: "Century Gothic Bold"; }
+        font-family: "Century Gothic Bold";
+        font-size: 1.25em; }
+      body.page-template-_about-tpl article.choose ul li p {
+        font-size: 1.25em; }
 
 body.single.single-inmueble article header {
   padding: 2.5em 0.25em; }
   body.single.single-inmueble article header h2 {
-    color: #E43834;
+    color: #e43834;
     font-size: 1.875em; }
     @media (min-width: 1024px) {
       body.single.single-inmueble article header h2 {
@@ -3152,6 +3180,13 @@ body.single.single-inmueble .content-wrapper .caption {
   padding: 0.9375em;
   color: #ffffff;
   background-color: #B2B1B1; }
+
+body.single.single-inmueble .content-wrapper .brand {
+  margin: 10px 0;
+  text-align: left; }
+  body.single.single-inmueble .content-wrapper .brand img {
+    display: inline-block;
+    max-width: 300px; }
 
 body.single.single-inmueble .content-wrapper .metadata ul {
   background-color: #fafafa;
@@ -3230,7 +3265,7 @@ body.page-template-_avaluos-tpl {
       margin: 0.9375em 0 0;
       display: inline-block;
       padding: 10px 25px;
-      background-color: #E43834;
+      background-color: #e43834;
       border: none;
       border-radius: 10px;
       font-family: "Century Gothic Bold";
@@ -3239,9 +3274,12 @@ body.page-template-_avaluos-tpl {
 article.pod_vertical {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 0.625em #434343;
+  border: 1px solid #dfe3e9;
   display: block;
   margin: 1.25em 0.625em; }
+  @media (min-width: 1024px) {
+    article.pod_vertical {
+      min-height: 33.75em; } }
   article.pod_vertical figure.thumb {
     width: 100%;
     height: 21.875em;
@@ -3256,7 +3294,7 @@ article.pod_vertical {
     padding: 0.625em;
     background-color: #ffffff; }
     article.pod_vertical .caption h4 {
-      color: #E43834;
+      color: #e43834;
       font-family: "Century Gothic Bold";
       font-size: 1.5625em; }
     article.pod_vertical .caption .metadata ul {
@@ -3301,7 +3339,7 @@ article.pod_vertical {
 article.pod_horizontal {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 0.625em #434343;
+  border: 1px solid #434343;
   display: block;
   margin: 1.25em 0.625em; }
   @media (min-width: 1024px) {
@@ -3327,7 +3365,7 @@ article.pod_horizontal {
         width: 55%;
         min-height: 21.875em; } }
     article.pod_horizontal .caption h4 {
-      color: #E43834;
+      color: #e43834;
       font-family: "Century Gothic Bold";
       font-size: 1.5625em; }
     article.pod_horizontal .caption .metadata ul {
@@ -3385,7 +3423,7 @@ article.pod_horizontal {
 .loop-clientes h3 {
   font-size: 1.25em;
   margin: 0.625em auto 0;
-  color: #E43834;
+  color: #e43834;
   position: relative;
   text-align: center; }
   @media (min-width: 1024px) {
