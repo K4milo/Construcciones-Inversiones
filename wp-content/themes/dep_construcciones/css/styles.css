@@ -195,7 +195,12 @@ body .side-menu {
       padding: 0;
       margin: 0  auto;
       float: none;
-      width: 80%; }
+      width: 80%;
+      position: relative; }
+      @media (min-width: 1024px) {
+        body .side-menu .nav-collapse .menu {
+          top: 50vh;
+          transform: translateY(-82%); } }
       body .side-menu .nav-collapse .menu > li {
         display: block;
         width: 100%;
@@ -3437,5 +3442,5 @@ article.pod_horizontal {
     display: block; }
     .loop-clientes ul li img {
       display: block;
-      max-width: 60%;
+      max-width: 66%;
       margin: 0 auto; }

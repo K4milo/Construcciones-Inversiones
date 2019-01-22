@@ -103,6 +103,11 @@ body {
 				margin: 0  auto;
 				float: none;
 				width: 80%;
+				position: relative;
+				@include sm {
+					top: 50vh;
+					transform: translateY(-82%);
+				}
 				> li {
 					display: block;
 					width: 100%;
