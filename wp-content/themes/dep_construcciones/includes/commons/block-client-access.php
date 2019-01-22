@@ -26,7 +26,7 @@ $icon_items = get_field('links_clientes');
 
 				?>
 
-				<div class="icon_item col-md-4">
+				<div class="icon_item col-md-3">
 					<figure>
 						<img src="<?php echo $icono_link; ?>">
 					</figure>

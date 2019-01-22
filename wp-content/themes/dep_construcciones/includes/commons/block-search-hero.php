@@ -16,7 +16,7 @@ $term_children = get_term_children( $term_id, $taxonomy_name );
 <section id="heroBanner" class="block-hero--search">
 	<div class="container">
 		<figure class="top-togo">
-			<img src="<?php bloginfo('template_url');?>/images/logos/logo.png" alt="Construcciones e Inversiones"/>
+			<a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_url');?>/images/logos/logo.png" alt="Construcciones e Inversiones"/></a>
 		</figure>
 		<h2>Un nuevo espacio lo espera</h2>
 		<form action="<?php echo get_site_url(); ?>/resultados/" method="post">

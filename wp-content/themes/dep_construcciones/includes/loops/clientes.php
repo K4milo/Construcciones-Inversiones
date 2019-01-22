@@ -1,5 +1,5 @@
 <section id="clientes" class="loop-clientes">
-	<h3>Nuestros Clientes</h3>
+	<h3>Nuestros Clientes </h3>
 	<div class="container loop-wrapper">
 		<ul>
 		<?php

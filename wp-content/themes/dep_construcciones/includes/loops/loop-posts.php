@@ -20,7 +20,7 @@
 			<h3><?php the_title()?></h3>
 			<h4>
 			    <em>			        
-			        <time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('F j, Y') ?></time>
+			        <time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('j F Y') ?></time>
 			    </em>
 			</h4>
 			<?php the_excerpt();?>

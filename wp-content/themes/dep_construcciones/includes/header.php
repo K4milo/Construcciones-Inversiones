@@ -17,7 +17,7 @@
 </div>
 <![endif]-->
 
-<nav class="side-menu">
+<nav class="side-menu  align-middle">
   <div class="nav-header">
     <button type="button" class="navbar-side-btn">
       <span class="sr-only">Toggle navigation</span>
@@ -27,9 +27,10 @@
     </button>
   </div>
   <div class="nav-collapse" id="navbar-side">
-    <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
-      <img src="<?php bloginfo('template_url')?>/images/logos/logo-white.png" alt="Construye inversiones"/>
-    </a>
+    <!--  <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
+   <img src="<?php bloginfo('template_url')?>/images/logos/logo-white.png" alt="Construye inversiones"/>
+    </a>-->
+	 <br><br>
     <?php
         wp_nav_menu( array(
             'theme_location'    => 'navbar-left',
