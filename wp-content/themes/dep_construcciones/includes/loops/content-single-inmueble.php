@@ -13,6 +13,18 @@ The Single Inmueble Loop
         $precio_inmueble  = get_field('precio_inmueble');
         $precio_admin  = get_field('precio_administracion');
         $galeria = get_field('galeria');
+        $transporte=get_field('transporte');
+		$sauna_turco=get_field('sauna_turco');
+		$pisos=get_field('pisos');
+		$piscina=get_field('piscina');
+		$parque=get_field('parque');
+		$gimnasio=get_field('gimnasio');
+		$garaje=get_field('garaje');
+		$exterior=get_field('exterior');
+		$estrato=get_field('estrato');
+		$ascensor=get_field('ascensor');
+		$antiguedad=get_field('antiguedad');
+		$administracion=get_field('administracion');
 
         // Taxonmy vars
         $ubicacion = wp_get_post_terms( get_the_ID(), array('ubicacion'));
@@ -66,18 +78,108 @@ The Single Inmueble Loop
                 
                 <div class="metadata">
                     <ul>
-                        <?php if($ubicacion): ?>
+						<div class="row">
+							<div class="col-md-3">
+								  <?php if($ubicacion): ?>
                             <li class="metadata--item ubicacion"><span class="icon">Ubicación:</span> <?php foreach($ubicacion as $ubi): echo $ubi->name; endforeach; ?></li>
                         <?php endif; ?>
-                        <?php if($metros_cuadrados): ?>
+							</div>
+							        <div class="col-md-3">
+										 <?php if($metros_cuadrados): ?>
                             <li class="metadata--item bottom-items metros"><span class="icon">Metros:</span> <?php  echo $metros_cuadrados; ?></li>
                         <?php endif; ?>
-                        <?php if($banos): ?>
+							</div>
+                       <div class="col-md-3">
+						   <?php if($banos): ?>
                             <li class="metadata--item bottom-items banos"><span class="icon">Baños:</span> <?php foreach($banos as $bano): echo $bano->name; endforeach; ?></li>
                         <?php endif; ?>
-                        <?php if($habitaciones): ?>
+							</div>
+                        <div class="col-md-3">
+							   <?php if($habitaciones): ?>
                             <li class="metadata--item bottom-items habs"><span class="icon">Habitaciones:</span> <?php foreach($habitaciones as $habitacion): echo $habitacion->name; endforeach; ?></li>
                         <?php endif; ?>
+							</div>
+                     
+						</div>
+              
+						<div class="row">
+							<div class="col-md-3">
+									<?php if($transporte): ?>
+                            <li class="metadata--item bottom-items transporte"><span class="icon">Transporte:</span> <?php  echo $transporte; ?></li>
+                        <?php endif; ?>
+							</div>
+							
+						<div class="col-md-3">
+								<?php if($sauna_turco): ?>
+                            <li class="metadata--item bottom-items sauna"><span class="icon">Sauna turco:</span> <?php  echo $sauna_turco; ?></li>
+                        <?php endif; ?>
+							</div>
+						<div class="col-md-3">
+							<?php if($pisos): ?>
+                            <li class="metadata--item bottom-items pisos"><span class="icon">Pisos:</span> <?php  echo $pisos; ?></li>
+                        <?php endif; ?>
+							</div>
+							<div class="col-md-3">
+								<?php if($piscina): ?>
+                            <li class="metadata--item bottom-items piscina"><span class="icon">Piscina:</span> <?php  echo $piscina; ?></li>
+                        <?php endif; ?>
+							</div>
+							
+										
+						</div>
+						
+						<div class="row">
+							<div class="col-md-3">
+									<?php if($parque): ?>
+                            <li class="metadata--item bottom-items parque"><span class="icon">Parque:</span> <?php  echo $parque; ?></li>
+                        <?php endif; ?>
+							</div>
+								<div class="col-md-3">
+								<?php if($gimnasio): ?>
+                            <li class="metadata--item bottom-items gimnasio"><span class="icon">Gimnasio:</span> <?php  echo $gimnasio; ?></li>
+                        <?php endif; ?>
+							</div>
+							<div class="col-md-3">
+								<?php if($garaje): ?>
+                            <li class="metadata--item bottom-items garaje"><span class="icon">Garaje:</span> <?php  echo $garaje; ?></li>
+                        <?php endif; ?>
+							</div>
+							<div class="col-md-3">
+									<?php if($estrato): ?>
+                            <li class="metadata--item bottom-items estrato"><span class="icon">Estrato:</span> <?php  echo $estrato; ?></li>
+                        <?php endif; ?>
+							</div>
+							
+							
+						
+						</div>
+						
+					<div class="row">
+						<div class="col-md-3">
+							<?php if($exterior): ?>
+                            <li class="metadata--item bottom-items exterior"><span class="icon">Estrato:</span> <?php  echo $exterior; ?></li>
+                        <?php endif; ?>
+							</div>
+								
+						<div class="col-md-3">
+							<?php if($ascensor): ?>
+                            <li class="metadata--item bottom-items ascensor"><span class="icon">Ascensor:</span> <?php  echo $ascensor; ?></li>
+                        <?php endif; ?>
+							</div>
+								<div class="col-md-3">
+							<?php if($antiguedad): ?>
+                            <li class="metadata--item bottom-items antiguedad"><span class="icon">Antigüedad:</span> <?php  echo $antiguedad; ?></li>
+                        <?php endif; ?>
+							</div>
+								<div class="col-md-3">
+							<?php if($administracion): ?>
+                            <li class="metadata--item bottom-items administracion"><span class="icon">Administración:</span> <?php  echo $administracion; ?></li>
+                        <?php endif; ?>
+							</div>
+							
+						</div>
+					
+						
                     </ul>
                 </div>
                 <div class="price">
@@ -91,12 +193,18 @@ The Single Inmueble Loop
                         <div class="price">
                             <?php echo money_format('%(#1.0n', $precio_admin); ?>
                         </div>
+						
                     </div>
                         
                 <?php endif; ?>
 
                 <div class="social-share">
                     <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+					<div class="wp">
+							<a class="whatsapp-movil" href="whatsapp://send/?phone=573125083128&text="><img src="<?php bloginfo('template_url');?>/images/icons/wp.png" alt="whatsapp" width="50px" height="auto"></a>
+
+						<a class="whatsapp-web" href="https://web.whatsapp.com/send/?phone=573125083128&text="><img src="<?php bloginfo('template_url');?>/images/icons/wp.png" alt="whatsapp" width="50px" height="auto"></a>
+						</div>
                 </div>
             </div>
 

@@ -58,6 +58,11 @@ if($query->have_posts()):
 
 			<a href="<?php the_permalink(); ?>" class="more-btn">Más Información</a>
 
+					<div class="wp">
+							<a class="whatsapp-movil" href="whatsapp://send/?phone=573125083128&text="><img src="<?php bloginfo('template_url');?>/images/icons/wp.png" alt="whatsapp" width="50px" height="auto"></a>
+
+						<a class="whatsapp-web" href="https://web.whatsapp.com/send/?phone=573125083128&text="><img src="<?php bloginfo('template_url');?>/images/icons/wp.png" alt="whatsapp" width="50px" height="auto"></a>
+						</div>
 			<?php endif; ?>
 
 		</div>

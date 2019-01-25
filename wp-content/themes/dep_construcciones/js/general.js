@@ -10,9 +10,9 @@
 		carousel_pods.slick({
 			dots: false,
 			arrows: true,
-			infinite: false,
+			infinite: true,
 			autoplay: true,
-			autoplaySpeed: 5000,
+			autoplaySpeed: 4000,
 			speed: 300,
 			slidesToShow: 3,
 			slidesToScroll: 3,
@@ -43,7 +43,9 @@
 		carousel_clients.slick({
 			dots: false,
 			arrows: true,
-			infinite: false,
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 4000,
 			speed: 300,
 			slidesToShow: 5,
 			slidesToScroll: 5,

@@ -10,8 +10,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+<!--<div  class="navbar-fixed-top" style="text-align:center; background-color:white;">
+				
+				<a href="<?php echo get_site_url(); ?>">	<img src="<?php bloginfo('template_url');?>/images/logos/logo-header.png" alt="Construcciones e Inversiones" width="150px" height="auto"></a>
 
-<!--[if lt IE 8]>
+</div>
+[if lt IE 8]>
 <div class="alert alert-warning">
 	You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
 </div>
@@ -27,9 +31,9 @@
     </button>
   </div>
   <div class="nav-collapse" id="navbar-side">
-    <!--  <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
+     <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
    <img src="<?php bloginfo('template_url')?>/images/logos/logo-white.png" alt="Construye inversiones"/>
-    </a>-->
+    </a>
 	 <br><br>
     <?php
         wp_nav_menu( array(

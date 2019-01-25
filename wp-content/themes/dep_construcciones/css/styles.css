@@ -199,8 +199,7 @@ body .side-menu {
       position: relative; }
       @media (min-width: 1024px) {
         body .side-menu .nav-collapse .menu {
-          top: 50vh;
-          transform: translateY(-82%); } }
+          } }
       body .side-menu .nav-collapse .menu > li {
         display: block;
         width: 100%;
@@ -243,8 +242,9 @@ body .side-menu {
     body .side-menu .nav-collapse .follow {
       position: absolute;
       z-index: 20;
-      bottom: 5%;
-      width: 100%; }
+      bottom: 14%;
+      width: 100%;
+      }
       @media (max-width: 767px) {
         body .side-menu .nav-collapse .follow {
           position: relative;
@@ -3212,12 +3212,93 @@ body.single.single-inmueble .content-wrapper .metadata ul {
       background-image: url("../images/icons/pointer.svg");
       background-size: 100% 100%;
       width: 30px;
-      height: 30px; }
+      height: 30px;
+  
+}
     body.single.single-inmueble .content-wrapper .metadata ul li.metros .icon {
       background-image: url("../images/icons/m2.svg");
       background-size: 100% 100%;
       width: 30px;
+      height: 30px; 
+  }
+
+  body.single.single-inmueble .content-wrapper .metadata ul li.transporte .icon {
+      background-image: url("../images/icons/Transporte.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px;
+  }
+
+body.single.single-inmueble .content-wrapper .metadata ul li.sauna .icon {
+      background-image: url("../images/icons/Sauna.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px;
+}
+
+body.single.single-inmueble .content-wrapper .metadata ul li.pisos .icon {
+      background-image: url("../images/icons/Piso.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; 
+}
+
+body.single.single-inmueble .content-wrapper .metadata ul li.piscina .icon {
+      background-image: url("../images/icons/Piscina.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px;
+}
+
+body.single.single-inmueble .content-wrapper .metadata ul li.parque .icon {
+      background-image: url("../images/icons/Parques.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px;
+  }
+
+body.single.single-inmueble .content-wrapper .metadata ul li.gimnasio .icon {
+      background-image: url("../images/icons/Gimnasio.svg");
+      background-size: 100% 100%;
+      width: 30px;
       height: 30px; }
+
+body.single.single-inmueble .content-wrapper .metadata ul li.garaje .icon {
+      background-image: url("../images/icons/Garaje.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+
+body.single.single-inmueble .content-wrapper .metadata ul li.estrato .icon {
+      background-image: url("../images/icons/Estrato.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+
+body.single.single-inmueble .content-wrapper .metadata ul li.ascensor .icon {
+      background-image: url("../images/icons/Ascensor.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+
+body.single.single-inmueble .content-wrapper .metadata ul li.antiguedad .icon {
+      background-image: url("../images/icons/Antiguedad.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+
+body.single.single-inmueble .content-wrapper .metadata ul li.administracion .icon {
+      background-image: url("../images/icons/Admon.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+
+body.single.single-inmueble .content-wrapper .metadata ul li.exterior .icon {
+      background-image: url("../images/icons/Exterior.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+
     body.single.single-inmueble .content-wrapper .metadata ul li.banos .icon {
       background-image: url("../images/icons/bath.svg");
       background-size: 100% 100%;
@@ -3444,3 +3525,26 @@ article.pod_horizontal {
       display: block;
       max-width: 66%;
       margin: 0 auto; }
+@media (max-width:768px){
+  .whatsapp-movil{
+    display:inline;
+  }
+  .foot-fijo{
+    display:none;
+  }
+  .whatsapp-web{
+    display:none;
+  }
+}
+
+@media (min-width:768px){
+  .whatsapp-movil{
+    display:none;
+  }
+  .whatsapp-web{
+    display:inline;
+  }
+}
+.wp{
+  margin:5px;
+}
