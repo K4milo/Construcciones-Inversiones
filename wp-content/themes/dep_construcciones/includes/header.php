@@ -3,20 +3,25 @@
 <head>
 	<title><?php wp_title('•', true, 'right'); bloginfo('name'); ?></title>
 	<meta charset="utf-8">
+  <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/favicon.png" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+<!--<div  class="navbar-fixed-top" style="text-align:center; background-color:white;">
+				
+				<a href="<?php echo get_site_url(); ?>">	<img src="<?php bloginfo('template_url');?>/images/logos/logo-header.png" alt="Construcciones e Inversiones" width="150px" height="auto"></a>
 
-<!--[if lt IE 8]>
+</div>
+[if lt IE 8]>
 <div class="alert alert-warning">
 	You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
 </div>
 <![endif]-->
 
-<nav class="side-menu">
+<nav class="side-menu  align-middle">
   <div class="nav-header">
     <button type="button" class="navbar-side-btn">
       <span class="sr-only">Toggle navigation</span>
@@ -26,23 +31,25 @@
     </button>
   </div>
   <div class="nav-collapse" id="navbar-side">
-    <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
-      <img src="<?php bloginfo('template_url')?>/images/logos/logo-white.png" alt="Construye inversiones"/>
+     <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
+   <img src="<?php bloginfo('template_url')?>/images/logos/logo-white.png" alt="Construye inversiones"/>
     </a>
+	 <br><br>
     <?php
         wp_nav_menu( array(
             'theme_location'    => 'navbar-left',
             'depth'             => 2,
-            'menu_class'        => 'nav navbar-nav'));
+            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'walker'            => new wp_bootstrap_navwalker())
+        );
       ?>
 
       <div class="follow">
         <ul>
-          <li><a href="#" class="social-icn fb" target="_blank">Facebook</a></li>
-          <li><a href="#" class="social-icn tw" target="_blank">Twitter</a></li>
-          <li><a href="#" class="social-icn yt" target="_blank">Youtube</a></li>
-          <li><a href="#" class="social-icn in" target="_blank">Instagram</a></li>
-          <li><a href="#" class="social-icn lin" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/cinversiones/" class="social-icn fb" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/construye_SAS" class="social-icn tw" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/construyeinversiones/" class="social-icn ins" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCikTZvZ-ZurpqZnSIiwe0yw" class="social-icn yt" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
         </ul>
       </div>
   </div><!-- /.navbar-collapse -->

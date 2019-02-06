@@ -9,7 +9,14 @@
 
 		$args = array(
 			'post_type' => 'inmueble',
-			'posts_per_page' => -1
+			'posts_per_page' => 10,
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'publicacion',
+					'field'    => 'slug',
+					'terms'    => 'destacada',
+				)
+			)
 		);
 
 		$query = new WP_Query($args);
@@ -38,7 +45,6 @@
 				</figure>
 				<div class="caption">
 					<h4><?php the_title();?></h4>
-					<?php the_excerpt();?>
 					<div class="metadata">
 						<ul>
 							<?php if($ubicacion): ?>
@@ -65,6 +71,7 @@
 					<?php endif; ?>
 
 					<a href="<?php the_permalink(); ?>" class="more-btn">Más Información</a>
+					
 
 				</div>
 

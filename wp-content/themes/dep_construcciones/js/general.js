@@ -10,7 +10,9 @@
 		carousel_pods.slick({
 			dots: false,
 			arrows: true,
-			infinite: false,
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 4000,
 			speed: 300,
 			slidesToShow: 3,
 			slidesToScroll: 3,
@@ -41,10 +43,12 @@
 		carousel_clients.slick({
 			dots: false,
 			arrows: true,
-			infinite: false,
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 4000,
 			speed: 300,
-			slidesToShow: 6,
-			slidesToScroll: 6,
+			slidesToShow: 5,
+			slidesToScroll: 5,
 			responsive: 
 			[
 				{
@@ -66,6 +70,32 @@
 			]
 		});
 	}
+
+	// Carousel inmuebles
+
+	var galleryWrapper = $('.gallery-wrapper'),
+		gallery_view   = galleryWrapper.find('.gallery-loop'),
+		gallery_rows   = gallery_view.find('.gallery-item');
+
+	
+	if(!gallery_view.hasClass('slick-initialized')) {
+
+		var params_slider = {
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			dots: true,
+			customPaging : function(slider, i) {
+				var thumb = $(slider.$slides[i]).find('.gallery-item').data('thumb');
+				return '<figure class="thumb-pager" style="background-image: url('+thumb+')">';
+			}
+		}
+
+		// slider object
+		var slider_gallery = gallery_view.slick(params_slider);
+
+	}
+
 
 	// Menu scripts
 	if ($('.side-menu .nav-collapse').hasClass('collapsed')) {

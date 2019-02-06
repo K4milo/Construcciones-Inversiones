@@ -13,7 +13,7 @@
 	?>
 	<div class="container results-wrapper page-wrapper">
 		<?php
-			get_template_part('includes/results/side','form');
+			get_template_part('includes/results/side','form-taxonomy');
 			get_template_part('includes/loops/inmuebles/loop','rents');
 		?>
 	</div>

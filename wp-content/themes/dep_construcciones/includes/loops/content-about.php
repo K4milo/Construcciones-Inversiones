@@ -32,7 +32,7 @@
 		    				<img src="<?php echo $fd_icono; ?>" alt="<?php echo $fd_title; ?>">
 		    			</figure>
 		    			<h4><?php echo $fd_title; ?></h4>
-		    			<p><?php echo $fd_texto; ?></p>
+		    			<p class="fdtexto"><?php echo $fd_texto; ?></p>
 		    		</li>
 
 	    		<?php
