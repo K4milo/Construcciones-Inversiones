@@ -1,0 +1,16 @@
+.blog-pods {
+	margin-top: em(30);
+	margin-bottom: em(30);
+}
+
+.pod_post {
+	figure {
+		width: 100%;
+		height: em(250);
+		margin: 0 auto em(15);
+		@include bgcover;
+		img {
+			display: none;
+		}
+	}
+}

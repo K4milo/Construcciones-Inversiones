@@ -1,0 +1,83 @@
+body {
+	&.single {
+		// Styles for single inmueble
+		&.single-inmueble {
+			article {
+				header {
+					padding: em(40) em(4);
+					h2 {
+						color: $red;
+						font-size: em(30);
+						@include sm {
+							font-size: em(40);
+						}
+					}
+				}
+			}
+			.content-wrapper {
+				.caption {
+					padding: em(15);
+					color: $white;
+					background-color: $grayBg;
+				}
+
+				.brand {
+					margin: 10px 0;
+					text-align: left;
+					img {
+						display: inline-block;
+						max-width: 300px;
+					}
+				}
+
+				.metadata {
+					ul {
+						background-color: $lgrey3;
+						padding: em(12);
+						li {
+							display: inline-block;
+							font-family: $bold;
+							font-size: em(20);
+							@include sm {
+								margin-right: em(10);
+							}
+							.icon {
+								display: inline-block;
+								overflow: hidden;
+								text-indent: -9999999px;
+								vertical-align: middle;
+							}
+
+							&.ubicacion {
+								.icon {
+									@include pointer(30px,30px);
+								}
+							}
+							&.metros {
+								.icon {
+									@include m2(30px,30px);
+								}
+							}
+							&.banos {
+								.icon {
+									@include bath(30px,30px);
+								}
+							}
+							&.habs {
+								.icon {
+									@include bed(30px,30px);
+								}
+							}
+						}
+					}
+				}
+
+				.price {
+					font-family: $bold;
+					font-size: em(42);
+					margin: em(5) 0;
+				}
+			}
+		}
+	}
+}

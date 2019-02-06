@@ -1,0 +1,48 @@
+body {
+	&.page-template-_avaluos-tpl {
+		background-size: cover;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-image: url('../images/bg/bg-avaluo.jpg');
+		> header {
+			text-align: center;
+			img {
+				display: inline-block;
+				margin: em(90) auto 0;
+				max-width: 90%;
+				@include sm {
+					margin: em(120) auto 0;
+				}
+			}
+			
+			h1 {
+				font-size: em(30);
+				margin: em(10) auto em(10);
+				color: $black;
+				@include sm {
+					font-size: em(80);	
+				}
+			}
+		}
+
+		article {
+			.content-wrapper {
+				background-color: rgba(255,255,255,0.7);
+				margin: 0 auto em(40);
+				width: 90%;
+				padding: em(15);
+				border-radius: em(20);
+				box-shadow: 0 0 em(15) $lgrey5;
+				@include sm {
+					width: 70%;
+					padding: em(25) em(35);
+				}
+				a {
+					margin: em(15) 0 0;
+					display: inline-block;
+					@include buttonRed;
+				}
+			}
+		}
+	}
+}

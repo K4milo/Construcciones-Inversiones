@@ -1,0 +1,24 @@
+#heroTitle {
+	width: 100%;
+	position: relative;
+	@include bgparallax;
+	background-position: center center;
+	text-align: center;
+	img {
+		display: inline-block;
+		margin: em(90) auto 0;
+		max-width: 90%;
+		@include sm {
+			margin: em(120) auto 0;
+		}
+	}
+	
+	h1 {
+		font-size: em(30);
+		margin: em(10) auto em(10);
+		color: $black;
+		@include sm {
+			font-size: em(80);	
+		}
+	}
+}

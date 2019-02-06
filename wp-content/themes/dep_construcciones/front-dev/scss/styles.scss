@@ -9,12 +9,16 @@
 @import "commons/general";
 @import "commons/header";
 @import "commons/footer";
+@import "commons/hero-title";
 
 // Blocks
 @import "blocks/home/hero-search";
 @import "blocks/home/client-links";
 @import "blocks/home/block-quotes";
 @import "blocks/home/block-form";
+
+// Modules
+@import "modules/gallery";
 
 // Vendors
 
@@ -24,8 +28,11 @@
 //Pages
 @import "pages/home";
 @import "pages/about";
+@import "pages/single";
+@import "pages/avaluos";
 
 //loops
 @import "loops/pod-vertical";
 @import "loops/pod-horizontal";
+@import "loops/pod-blog";
 @import "loops/loop-clients";

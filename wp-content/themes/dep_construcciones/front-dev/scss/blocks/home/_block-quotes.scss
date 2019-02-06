@@ -11,10 +11,10 @@
 	}
 	h2 {
 		font-size: em(40);
-		margin: em(10) auto em(10);
+		margin: em(50) auto em(10);
 		color: $red;
 		@include sm {
-			font-size: em(60);	
+			font-size: em(60);
 		}
 	}
 	p {
@@ -22,12 +22,17 @@
 		max-width: em(600);
 		margin: em(33) auto;
 		@include sm {
-			font-size: em(30);
+			text-align: justify;
+			font-size: em(20);
 		}
 	}
 
 	a {
-		display: inline-block;
+		display: block;
+		max-width: em(180);
+		text-align: center;
+		margin: em(33) auto;
+		border-radius: 0;
 		@include buttonRed;
 	}
 }
