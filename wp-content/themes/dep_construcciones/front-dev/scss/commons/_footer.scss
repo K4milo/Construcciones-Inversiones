@@ -23,15 +23,16 @@ footer {
 				margin: 0 0 0 0;
 				background-image: url('../images/bg/bg-prefooter.jpg');
 				@include sm {
-					overflow: hidden;
+					overflow: hidden; 
 				}
 				
 				video {
 					display: none;
 					position: absolute;
-					top: 0;
+					top: 50%;
 					left: 0;
-					width: 143%;
+					transform: translateY(-50%);					
+					width: 243%;
 					@include sm {
 						display: block;
 					}
