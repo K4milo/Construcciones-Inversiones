@@ -1,22 +1,3 @@
-@media (max-width:995px){
-
-  .foot-fijo{
-    display:none;
-  }
-	.foot-fijo-movil{
-		display:block;
-	}
-}
-
-
-
-@media (min-width:995px){
-
-	.foot-fijo-movil{
-		display:none;
-	}
-}
-
 video {
     position: fixed;
     right:0;
@@ -28,4 +9,22 @@ video {
 }
 .fdtexto{
 	text-align:center;
+}
+@media (max-width:995px) {
+    .foot-fijo {
+        display: none;
+	
+    }
+    .foot-fijo-movil {
+        display: block;
+	
+    }
+	
+}
+@media (min-width:995px) {
+    .foot-fijo-movil {
+        display: none;
+	
+    }
+	
 }

@@ -47,8 +47,7 @@ body {
   body h1, body h2, body h3, body h4, body h5 {
     font-family: "Bebas Neue"; }
   body p {
-    font-family: "Century Gothic";
-    text-align: justify;}
+    font-family: "Century Gothic"; }
   body img {
     max-width: 100%;
     height: auto; }
@@ -200,7 +199,8 @@ body .side-menu {
       position: relative; }
       @media (min-width: 1024px) {
         body .side-menu .nav-collapse .menu {
-          } }
+          top: 50vh;
+          transform: translateY(-82%); } }
       body .side-menu .nav-collapse .menu > li {
         display: block;
         width: 100%;
@@ -243,9 +243,8 @@ body .side-menu {
     body .side-menu .nav-collapse .follow {
       position: absolute;
       z-index: 20;
-      bottom: 14%;
-      width: 100%;
-      }
+      bottom: 5%;
+      width: 100%; }
       @media (max-width: 767px) {
         body .side-menu .nav-collapse .follow {
           position: relative;
@@ -286,7 +285,6 @@ footer {
       margin: 0 0 0 0;
       padding: 0 0 0 0; }
       footer.container-fluid .row.pre-footer {
-		
         clear: both;
         float: none;
         overflow: hidden;
@@ -298,21 +296,19 @@ footer {
         background-size: cover;
         background-position: center top;
         margin: 0 0 0 0;
-        background-image: url("../images/bg/bg-prefooter.jpg");
-       }
+        background-image: url("../images/bg/bg-prefooter.jpg"); }
         @media (min-width: 1024px) {
           footer.container-fluid .row.pre-footer {
             overflow: hidden; } }
         footer.container-fluid .row.pre-footer video {
-			
           display: none;
           position: absolute;
-          top: 0;
+          top: 50%;
           left: 0;
-          width: 143%; }
+          transform: translateY(-50%);
+          width: 243%; }
           @media (min-width: 1024px) {
             footer.container-fluid .row.pre-footer video {
-				
               display: block; } }
         footer.container-fluid .row.pre-footer .widget_text {
           text-align: left;
@@ -476,7 +472,7 @@ footer {
       max-height: 600px; } }
   .block--quotes h2 {
     font-size: 2.5em;
-    margin: 2.125em auto 0.625em;
+    margin: 3.125em auto 0.625em;
     color: #e43834; }
     @media (min-width: 1024px) {
       .block--quotes h2 {
@@ -509,7 +505,7 @@ footer {
   background-color: #dfe3e9;
   text-align: center; }
   .block--form h3 {
-    font-size: 2.5em;
+    font-size: 1.25em;
     margin: 0.625em auto 0;
     color: #e43834; }
     @media (min-width: 1024px) {
@@ -698,24 +694,20 @@ footer {
   transform: translate(0, -50%);
   padding: 0;
   border: none;
-  outline: none; 
-	background-color:#ffffff33;}
+  outline: none; }
   .slick-prev:hover, .slick-prev:focus,
   .slick-next:hover,
   .slick-next:focus {
     outline: none;
     background: transparent;
-    color: transparent;
-background-color:#ffffff33;}
+    color: transparent; }
     .slick-prev:hover:before, .slick-prev:focus:before,
     .slick-next:hover:before,
     .slick-next:focus:before {
-      opacity: 0.9; 
-}
+      opacity: 0.9; }
   .slick-prev.slick-disabled:before,
   .slick-next.slick-disabled:before {
-    opacity: 0.25;
-}
+    opacity: 0.25; }
   .slick-prev:before,
   .slick-next:before {
     font-family: "FontAwesome";
@@ -724,8 +716,7 @@ background-color:#ffffff33;}
     color: #000000;
     opacity: 1;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; 
-}
+    -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
   left: 0;
@@ -3117,14 +3108,14 @@ background-color:#ffffff33;}
   clip: auto; }
 
 body.home .loop-inmuebles h3 {
-  font-size: 2.5em;
+  font-size: 1.25em;
   margin: 0.625em auto 0;
   color: #e43834;
   text-align: center; }
   @media (min-width: 1024px) {
     body.home .loop-inmuebles h3 {
       margin: 1.25em auto 0.625em;
-      font-size: 3.75em; } }
+      font-size: 2.5em; } }
 
 @media (min-width: 1024px) {
   body.home .loop-inmuebles .slick-slide {
@@ -3209,12 +3200,10 @@ body.single.single-inmueble .content-wrapper .metadata ul {
   body.single.single-inmueble .content-wrapper .metadata ul li {
     display: inline-block;
     font-family: "Bebas Neue";
-    font-size: 1.25em;
-	width:86px;}
+    font-size: 1.25em; }
     @media (min-width: 1024px) {
       body.single.single-inmueble .content-wrapper .metadata ul li {
-        margin-right: 0.625em; 
-		width:86px;} }
+        margin-right: 0.625em; } }
     body.single.single-inmueble .content-wrapper .metadata ul li .icon {
       display: inline-block;
       overflow: hidden;
@@ -3224,93 +3213,12 @@ body.single.single-inmueble .content-wrapper .metadata ul {
       background-image: url("../images/icons/pointer.svg");
       background-size: 100% 100%;
       width: 30px;
-      height: 30px;
-  
-}
+      height: 30px; }
     body.single.single-inmueble .content-wrapper .metadata ul li.metros .icon {
       background-image: url("../images/icons/m2.svg");
       background-size: 100% 100%;
       width: 30px;
-      height: 30px; 
-  }
-
-  body.single.single-inmueble .content-wrapper .metadata ul li.transporte .icon {
-      background-image: url("../images/icons/Transporte.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px;
-  }
-
-body.single.single-inmueble .content-wrapper .metadata ul li.sauna .icon {
-      background-image: url("../images/icons/Sauna.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px;
-}
-
-body.single.single-inmueble .content-wrapper .metadata ul li.pisos .icon {
-      background-image: url("../images/icons/Piso.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px; 
-}
-
-body.single.single-inmueble .content-wrapper .metadata ul li.piscina .icon {
-      background-image: url("../images/icons/Piscina.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px;
-}
-
-body.single.single-inmueble .content-wrapper .metadata ul li.parque .icon {
-      background-image: url("../images/icons/Parques.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px;
-  }
-
-body.single.single-inmueble .content-wrapper .metadata ul li.gimnasio .icon {
-      background-image: url("../images/icons/Gimnasio.svg");
-      background-size: 100% 100%;
-      width: 30px;
       height: 30px; }
-
-body.single.single-inmueble .content-wrapper .metadata ul li.garaje .icon {
-      background-image: url("../images/icons/Garaje.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px; }
-
-body.single.single-inmueble .content-wrapper .metadata ul li.estrato .icon {
-      background-image: url("../images/icons/Estrato.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px; }
-
-body.single.single-inmueble .content-wrapper .metadata ul li.ascensor .icon {
-      background-image: url("../images/icons/Ascensor.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px; }
-
-body.single.single-inmueble .content-wrapper .metadata ul li.antiguedad .icon {
-      background-image: url("../images/icons/Antiguedad.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px; }
-
-body.single.single-inmueble .content-wrapper .metadata ul li.administracion .icon {
-      background-image: url("../images/icons/Admon.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px; }
-
-body.single.single-inmueble .content-wrapper .metadata ul li.exterior .icon {
-      background-image: url("../images/icons/Exterior.svg");
-      background-size: 100% 100%;
-      width: 30px;
-      height: 30px; }
-
     body.single.single-inmueble .content-wrapper .metadata ul li.banos .icon {
       background-image: url("../images/icons/bath.svg");
       background-size: 100% 100%;
@@ -3519,7 +3427,7 @@ article.pod_horizontal {
     display: none; }
 
 .loop-clientes h3 {
-  font-size: 2.5em;
+  font-size: 1.25em;
   margin: 0.625em auto 0;
   color: #e43834;
   position: relative;
@@ -3537,35 +3445,3 @@ article.pod_horizontal {
       display: block;
       max-width: 66%;
       margin: 0 auto; }
-
-@media (max-width:995px){
-
-  .foot-fijo{
-    display:none;
-  }
-	.foot-fijo-movil{
-		display:block;
-	}
-}
-
-
-
-@media (min-width:995px){
-
-	.foot-fijo-movil{
-		display:none;
-	}
-}
-
-video {
-    position: fixed;
-    right:0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translate(0, -210px) ;
-	
-}
-.fdtexto{
-	text-align:center;
-}
