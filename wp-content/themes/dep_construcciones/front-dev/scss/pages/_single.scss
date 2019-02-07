@@ -2,6 +2,34 @@ body {
 	&.single {
 		// Styles for single inmueble
 		&.single-inmueble {
+			// Banner
+
+			.bg-banner {
+				position: relative;
+				@include bgparallax;
+				background-position: center center;
+				text-align: center;
+				ul {
+					text-align: center;
+					padding: em(120) 0;
+					@include sm {
+						padding: em(150) 0;
+					}
+					li {
+						display: inline-block;
+						font-family: $bold;
+						text-transform: uppercase;
+						color: $black;
+						font-size: em(30);
+						margin: 0 10px;
+						@include sm {
+							font-size: em(90);
+							margin: 0 20px;
+						}
+					}
+				}
+			}
+			// Content article 
 			article {
 				header {
 					padding: em(40) em(4);
@@ -11,6 +39,13 @@ body {
 						@include sm {
 							font-size: em(40);
 						}
+					}
+				}
+
+				.video-wrapper {
+					padding: em(20) 0;
+					iframe {
+						width: 100%;
 					}
 				}
 			}
@@ -38,6 +73,7 @@ body {
 							display: inline-block;
 							font-family: $bold;
 							font-size: em(20);
+							margin: em(10);
 							@include sm {
 								margin-right: em(10);
 							}
@@ -68,6 +104,71 @@ body {
 									@include bed(30px,30px);
 								}
 							}
+							&.admon {
+								.icon {
+									@include admon(30px,30px);
+								}								
+							}
+							&.antiguedad {
+								.icon {
+									@include antiguedad(30px,30px);
+								}								
+							}
+							&.ascensor {
+								.icon {
+									@include ascensor(30px,30px);
+								}								
+							}
+							&.estrato {
+								.icon {
+									@include estrato(30px,30px);
+								}								
+							}
+							&.exterior {
+								.icon {
+									@include exterior(30px,30px);
+								}								
+							}
+							&.gimnasio {
+								.icon {
+									@include gimnasio(30px,30px);
+								}								
+							}
+							&.garaje {
+								.icon {
+									@include garaje(30px,30px);
+								}								
+							}
+							&.parques {
+								.icon {
+									@include parques(30px,30px);
+								}								
+							}
+							&.piscina {
+								.icon {
+									@include piscina(30px,30px);
+								}								
+							}
+							&.pisos {
+								.icon {
+									@include piso(30px,30px);
+								}								
+							}
+							&.sauna {
+								.icon {
+									@include sauna(30px,30px);
+								}								
+							}
+							&.seguridad {
+								.icon {
+									@include seguridad(30px,30px);
+								}								
+							}
+							&.transporte {
+								.icon {
+									@include transporte(30px,30px);
+								}								
+							}
 						}
 					}
 				}
@@ -76,6 +177,16 @@ body {
 					font-family: $bold;
 					font-size: em(42);
 					margin: em(5) 0;
+				}
+
+				.social-share {
+					.whatsapp-web,
+					.whatsapp-movil {
+						display: inline-block;
+						@include sm {
+							display: none;
+						}
+					}
 				}
 			}
 		}

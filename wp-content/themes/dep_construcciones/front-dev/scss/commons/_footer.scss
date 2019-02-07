@@ -72,5 +72,20 @@ footer {
 				}
 			}
 		}
+		// fOOTER DESKTOP
+		.foot-fijo {
+			display: none;
+			padding: em(12); 
+			@include sm {
+				display: block;
+			}
+		}
+		// Footer mobile
+		.foot-fijo-movil {
+			display: block;
+			@include sm {
+				display: none;
+			}
+		}
 	}
 }

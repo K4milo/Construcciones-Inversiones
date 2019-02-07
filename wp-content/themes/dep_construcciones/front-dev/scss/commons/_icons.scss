@@ -46,3 +46,94 @@
 	width: $width;
 	height: $height;
 }
+
+@mixin admon($width,$height) {
+	background-image: url('../images/icons/Admon.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin antiguedad($width,$height) {
+	background-image: url('../images/icons/Antiguedad.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin ascensor($width,$height) {
+	background-image: url('../images/icons/Ascensor.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin estrato($width,$height) {
+	background-image: url('../images/icons/Estrato.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin exterior($width,$height) {
+	background-image: url('../images/icons/Exterior.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin gimnasio($width,$height) {
+	background-image: url('../images/icons/Gimnasio.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin garaje($width,$height) {
+	background-image: url('../images/icons/Garaje.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin parques($width,$height) {
+	background-image: url('../images/icons/Parques.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin piscina($width,$height) {
+	background-image: url('../images/icons/Piscina.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin piso($width,$height) {
+	background-image: url('../images/icons/Piso.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin sauna($width,$height) {
+	background-image: url('../images/icons/Sauna.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin seguridad($width,$height) {
+	background-image: url('../images/icons/Seguridad.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}
+
+@mixin transporte($width,$height) {
+	background-image: url('../images/icons/Transporte.svg');
+	background-size: 100% 100%;
+	width: $width;
+	height: $height;
+}

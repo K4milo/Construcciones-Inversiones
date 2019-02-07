@@ -333,6 +333,17 @@ footer {
               width: 32%; } }
           footer.container-fluid .row.copyright ul li a {
             color: #000000; }
+    footer.container-fluid .foot-fijo {
+      display: none;
+      padding: 0.75em; }
+      @media (min-width: 1024px) {
+        footer.container-fluid .foot-fijo {
+          display: block; } }
+    footer.container-fluid .foot-fijo-movil {
+      display: block; }
+      @media (min-width: 1024px) {
+        footer.container-fluid .foot-fijo-movil {
+          display: none; } }
 
 #heroTitle {
   width: 100%;
@@ -3173,6 +3184,31 @@ body.page-template-_about-tpl {
       body.page-template-_about-tpl article.choose ul li p {
         font-size: 1.25em; }
 
+body.single.single-inmueble .bg-banner {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+  background-position: center center;
+  text-align: center; }
+  body.single.single-inmueble .bg-banner ul {
+    text-align: center;
+    padding: 7.5em 0; }
+    @media (min-width: 1024px) {
+      body.single.single-inmueble .bg-banner ul {
+        padding: 9.375em 0; } }
+    body.single.single-inmueble .bg-banner ul li {
+      display: inline-block;
+      font-family: "Bebas Neue";
+      text-transform: uppercase;
+      color: #000000;
+      font-size: 1.875em;
+      margin: 0 10px; }
+      @media (min-width: 1024px) {
+        body.single.single-inmueble .bg-banner ul li {
+          font-size: 5.625em;
+          margin: 0 20px; } }
+
 body.single.single-inmueble article header {
   padding: 2.5em 0.25em; }
   body.single.single-inmueble article header h2 {
@@ -3181,6 +3217,11 @@ body.single.single-inmueble article header {
     @media (min-width: 1024px) {
       body.single.single-inmueble article header h2 {
         font-size: 2.5em; } }
+
+body.single.single-inmueble article .video-wrapper {
+  padding: 1.25em 0; }
+  body.single.single-inmueble article .video-wrapper iframe {
+    width: 100%; }
 
 body.single.single-inmueble .content-wrapper .caption {
   padding: 0.9375em;
@@ -3200,7 +3241,8 @@ body.single.single-inmueble .content-wrapper .metadata ul {
   body.single.single-inmueble .content-wrapper .metadata ul li {
     display: inline-block;
     font-family: "Bebas Neue";
-    font-size: 1.25em; }
+    font-size: 1.25em;
+    margin: 0.625em; }
     @media (min-width: 1024px) {
       body.single.single-inmueble .content-wrapper .metadata ul li {
         margin-right: 0.625em; } }
@@ -3229,11 +3271,84 @@ body.single.single-inmueble .content-wrapper .metadata ul {
       background-size: 100% 100%;
       width: 30px;
       height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.admon .icon {
+      background-image: url("../images/icons/Admon.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.antiguedad .icon {
+      background-image: url("../images/icons/Antiguedad.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.ascensor .icon {
+      background-image: url("../images/icons/Ascensor.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.estrato .icon {
+      background-image: url("../images/icons/Estrato.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.exterior .icon {
+      background-image: url("../images/icons/Exterior.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.gimnasio .icon {
+      background-image: url("../images/icons/Gimnasio.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.garaje .icon {
+      background-image: url("../images/icons/Garaje.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.parques .icon {
+      background-image: url("../images/icons/Parques.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.piscina .icon {
+      background-image: url("../images/icons/Piscina.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.pisos .icon {
+      background-image: url("../images/icons/Piso.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.sauna .icon {
+      background-image: url("../images/icons/Sauna.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.seguridad .icon {
+      background-image: url("../images/icons/Seguridad.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
+    body.single.single-inmueble .content-wrapper .metadata ul li.transporte .icon {
+      background-image: url("../images/icons/Transporte.svg");
+      background-size: 100% 100%;
+      width: 30px;
+      height: 30px; }
 
 body.single.single-inmueble .content-wrapper .price {
   font-family: "Bebas Neue";
   font-size: 2.625em;
   margin: 0.3125em 0; }
+
+body.single.single-inmueble .content-wrapper .social-share .whatsapp-web,
+body.single.single-inmueble .content-wrapper .social-share .whatsapp-movil {
+  display: inline-block; }
+  @media (min-width: 1024px) {
+    body.single.single-inmueble .content-wrapper .social-share .whatsapp-web,
+    body.single.single-inmueble .content-wrapper .social-share .whatsapp-movil {
+      display: none; } }
 
 body.page-template-_avaluos-tpl {
   background-size: cover;
