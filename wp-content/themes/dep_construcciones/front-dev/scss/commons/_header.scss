@@ -40,7 +40,7 @@ body {
 	.side-menu {
 		position: fixed;
 		height: 100%;
-		z-index: 10;
+		z-index: 999;
 		top: 0;
 		left: 0;
 		//the button
@@ -105,8 +105,7 @@ body {
 				width: 80%;
 				position: relative;
 				@include sm {
-					top: 50vh;
-					transform: translateY(-82%);
+					top: 50%;
 				}
 				> li {
 					display: block;
@@ -166,7 +165,7 @@ body {
 			.follow {
 				position: absolute;
 				z-index: 20;
-				bottom: 5%;
+				bottom: 15%;
 				width: 100%;
 				@include mobile {
 					position: relative;

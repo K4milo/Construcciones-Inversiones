@@ -46,8 +46,14 @@ body {
       text-decoration: none; }
   body h1, body h2, body h3, body h4, body h5 {
     font-family: "Bebas Neue"; }
+    @media (min-width: 1024px) {
+      body h1, body h2, body h3, body h4, body h5 {
+        font-size: 3.75em; } }
   body p {
     font-family: "Century Gothic"; }
+    @media (min-width: 1024px) {
+      body p {
+        text-align: justify; } }
   body img {
     max-width: 100%;
     height: auto; }
@@ -141,7 +147,7 @@ body .the-logo {
 body .side-menu {
   position: fixed;
   height: 100%;
-  z-index: 10;
+  z-index: 999;
   top: 0;
   left: 0; }
   body .side-menu .nav-header .navbar-side-btn {
@@ -199,8 +205,7 @@ body .side-menu {
       position: relative; }
       @media (min-width: 1024px) {
         body .side-menu .nav-collapse .menu {
-          top: 50vh;
-          transform: translateY(-82%); } }
+          top: 50%; } }
       body .side-menu .nav-collapse .menu > li {
         display: block;
         width: 100%;
@@ -243,7 +248,7 @@ body .side-menu {
     body .side-menu .nav-collapse .follow {
       position: absolute;
       z-index: 20;
-      bottom: 5%;
+      bottom: 15%;
       width: 100%; }
       @media (max-width: 767px) {
         body .side-menu .nav-collapse .follow {
@@ -581,6 +586,19 @@ footer {
         height: 37.5em; } }
     .gallery-loop .gallery-item figure {
       display: none; }
+  .gallery-loop .slick-prev,
+  .gallery-loop .slick-next {
+    z-index: 20;
+    background-color: #e43834 !important; }
+    .gallery-loop .slick-prev::before,
+    .gallery-loop .slick-next::before {
+      color: #ffffff; }
+    .gallery-loop .slick-prev:hover,
+    .gallery-loop .slick-next:hover {
+      background-color: #ffffff !important; }
+      .gallery-loop .slick-prev:hover::before,
+      .gallery-loop .slick-next:hover::before {
+        color: #e43834; }
   .gallery-loop .slick-dots {
     position: relative;
     margin: 1.5625em auto;
@@ -3126,7 +3144,7 @@ body.home .loop-inmuebles h3 {
   @media (min-width: 1024px) {
     body.home .loop-inmuebles h3 {
       margin: 1.25em auto 0.625em;
-      font-size: 2.5em; } }
+      font-size: 3.75em; } }
 
 @media (min-width: 1024px) {
   body.home .loop-inmuebles .slick-slide {
@@ -3531,6 +3549,14 @@ article.pod_horizontal {
 .blog-pods {
   margin-top: 1.875em;
   margin-bottom: 1.875em; }
+
+@media (min-width: 1024px) {
+  .pod_post h3 {
+    font-size: 2.1875em; } }
+
+@media (min-width: 1024px) {
+  .pod_post h4 {
+    font-size: 1.75em; } }
 
 .pod_post figure {
   width: 100%;

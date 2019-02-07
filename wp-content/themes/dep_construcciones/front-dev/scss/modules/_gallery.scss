@@ -13,6 +13,22 @@
 		}
 	}
 
+	// Pager
+	.slick-prev,
+	.slick-next {
+		z-index: 20;
+		background-color: $red !important;
+		&::before {
+			color: $white;
+		}
+		&:hover {
+			background-color: $white !important;			
+			&::before {
+				color: $red;
+			}
+		}
+	}
+
 	.slick-dots {
 		position: relative;
 		margin: em(25) auto;

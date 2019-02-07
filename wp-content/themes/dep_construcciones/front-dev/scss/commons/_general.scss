@@ -16,10 +16,16 @@ body {
   
   h1,h2,h3,h4,h5 {
     font-family: $bold;
+    @include sm {
+      font-size: em(60);
+    }
   }
 
   p {
-   font-family: $regular; 
+   font-family: $regular;
+    @include sm {
+      text-align: justify; 
+    }
   }
 
   img {

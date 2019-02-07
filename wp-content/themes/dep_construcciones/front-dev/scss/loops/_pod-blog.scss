@@ -4,6 +4,16 @@
 }
 
 .pod_post {
+	h3 {
+		@include sm {
+			font-size: em(35);
+		}
+	}
+	h4 {
+		@include sm {
+			font-size: em(28);
+		}
+	}
 	figure {
 		width: 100%;
 		height: em(250);
