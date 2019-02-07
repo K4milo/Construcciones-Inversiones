@@ -38,7 +38,11 @@ body {
   moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  padding-bottom: 30px; }
+  @media (min-width: 1024px) {
+    body {
+      padding-bottom: 80px; } }
   body a, body button, body .btn {
     transition: all 0.3s; }
     body a:hover, body button:hover, body .btn:hover {
