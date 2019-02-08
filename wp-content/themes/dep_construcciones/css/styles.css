@@ -375,7 +375,7 @@ footer {
     color: #000000; }
     @media (min-width: 1024px) {
       #heroTitle h1 {
-        font-size: 5em; } }
+        font-size: 3.75em; } }
 
 .block-hero--search {
   width: 100%;
@@ -489,7 +489,25 @@ footer {
   @media (min-width: 1024px) {
     .block--quotes {
       height: 100vh;
-      max-height: 600px; } }
+      max-height: 700px; } }
+  .block--quotes .logos-wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .block--quotes .logos-wrapper ul {
+    padding: 1em 0;
+    text-align: center; }
+    .block--quotes .logos-wrapper ul li {
+      display: block;
+      margin: 0.9375em auto;
+      max-width: 9.375em; }
+      @media (min-width: 1024px) {
+        .block--quotes .logos-wrapper ul li {
+          display: inline-block;
+          margin: 0 0.9375em;
+          max-width: 6.875em; } }
+      .block--quotes .logos-wrapper ul li img {
+        max-width: 100%; }
   .block--quotes h2 {
     font-size: 2.5em;
     margin: 3.125em auto 0.625em;
@@ -3212,6 +3230,7 @@ body.single.single-inmueble .bg-banner {
   background-size: cover;
   background-position: center top;
   background-position: center center;
+  background-image: url("/wp-content/uploads/2018/12/bg-ventas-1.jpg");
   text-align: center; }
   body.single.single-inmueble .bg-banner ul {
     text-align: center;
@@ -3235,10 +3254,10 @@ body.single.single-inmueble article header {
   padding: 2.5em 0.25em; }
   body.single.single-inmueble article header h2 {
     color: #e43834;
-    font-size: 1.875em; }
+    font-size: 2.5em; }
     @media (min-width: 1024px) {
       body.single.single-inmueble article header h2 {
-        font-size: 2.5em; } }
+        font-size: 3.75em; } }
 
 body.single.single-inmueble article .video-wrapper {
   padding: 1.25em 0; }
@@ -3392,7 +3411,7 @@ body.page-template-_avaluos-tpl {
       color: #000000; }
       @media (min-width: 1024px) {
         body.page-template-_avaluos-tpl > header h1 {
-          font-size: 5em; } }
+          font-size: 3.75em; } }
   body.page-template-_avaluos-tpl article .content-wrapper {
     background-color: rgba(255, 255, 255, 0.7);
     margin: 0 auto 2.5em;
