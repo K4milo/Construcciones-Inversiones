@@ -13,7 +13,7 @@
 			'post_type' => 'inmueble',
 			'posts_per_page' => -1,
 			'tax_query' => array(
-				'relation' => 'AND',
+				'relation' => 'OR',
 			    array(
 			        'taxonomy' => 'tipos',
 			        'terms' => $type,
