@@ -48,8 +48,13 @@ body {
     body a:hover, body button:hover, body .btn:hover {
       transition: all 0.3s;
       text-decoration: none; }
+  body form .form-control:focus {
+    border-color: #e43834;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(228, 56, 52, 0.88), 0 0 8px rgba(228, 56, 52, 0.88); }
   body h1, body h2, body h3, body h4, body h5 {
-    font-family: "Bebas Neue"; }
+    font-family: "Bebas Neue";
+    font-size: 2.5em; }
     @media (min-width: 1024px) {
       body h1, body h2, body h3, body h4, body h5 {
         font-size: 3.75em; } }
@@ -370,12 +375,8 @@ footer {
       #heroTitle img {
         margin: 7.5em auto 0; } }
   #heroTitle h1 {
-    font-size: 1.875em;
     margin: 0.625em auto 0.625em;
     color: #000000; }
-    @media (min-width: 1024px) {
-      #heroTitle h1 {
-        font-size: 3.75em; } }
 
 .block-hero--search {
   width: 100%;
@@ -394,12 +395,8 @@ footer {
       .block-hero--search img {
         margin: 7.5em auto 0; } }
   .block-hero--search h2 {
-    font-size: 2.5em;
     margin: 0.625em auto 0.625em;
     color: #000000; }
-    @media (min-width: 1024px) {
-      .block-hero--search h2 {
-        font-size: 3.75em; } }
   .block-hero--search form ul {
     padding: 0 0 0 0;
     position: relative;
@@ -451,13 +448,11 @@ footer {
       height: 100vh;
       max-height: 600px; } }
   .block-client--links h3 {
-    font-size: 2.5em;
     margin: 0.625em auto;
     color: #e43834; }
     @media (min-width: 1024px) {
       .block-client--links h3 {
-        margin: 1.25em auto 1.875em;
-        font-size: 3.75em; } }
+        margin: 1.25em auto 1.875em; } }
   .block-client--links figure {
     display: block; }
     .block-client--links figure img {
@@ -491,12 +486,8 @@ footer {
       height: 100vh;
       max-height: 700px; } }
   .block--quotes h2 {
-    font-size: 2.5em;
     margin: 3.125em auto 0.625em;
     color: #e43834; }
-    @media (min-width: 1024px) {
-      .block--quotes h2 {
-        font-size: 3.75em; } }
   .block--quotes p {
     display: block;
     max-width: 37.5em;
@@ -525,13 +516,11 @@ footer {
   background-color: #dfe3e9;
   text-align: center; }
   .block--form h3 {
-    font-size: 1.25em;
     margin: 0.625em auto 0;
     color: #e43834; }
     @media (min-width: 1024px) {
       .block--form h3 {
-        margin: 1.25em auto 0.625em;
-        font-size: 3.75em; } }
+        margin: 1.25em auto 0.625em; } }
   .block--form form {
     width: 100%;
     max-width: 37.5em;
@@ -3141,14 +3130,12 @@ footer {
   clip: auto; }
 
 body.home .loop-inmuebles h3 {
-  font-size: 1.25em;
   margin: 0.625em auto 0;
   color: #e43834;
   text-align: center; }
   @media (min-width: 1024px) {
     body.home .loop-inmuebles h3 {
-      margin: 1.25em auto 0.625em;
-      font-size: 3.75em; } }
+      margin: 1.25em auto 0.625em; } }
 
 @media (min-width: 1024px) {
   body.home .loop-inmuebles .slick-slide {
@@ -3173,12 +3160,10 @@ body.page-template-_about-tpl {
   background-repeat: no-repeat;
   background-image: url("../images/bg/bg-about.jpg"); }
   body.page-template-_about-tpl article header h3 {
-    font-size: 2.5em;
     margin: 0.625em auto 0.625em;
     color: #000000; }
     @media (min-width: 1024px) {
       body.page-template-_about-tpl article header h3 {
-        font-size: 3.75em;
         margin: 0.625em 0;
         font-size: 3.75em; } }
   body.page-template-_about-tpl article.type-page {
@@ -3235,11 +3220,7 @@ body.single.single-inmueble .bg-banner {
 body.single.single-inmueble article header {
   padding: 2.5em 0.25em; }
   body.single.single-inmueble article header h2 {
-    color: #e43834;
-    font-size: 2.5em; }
-    @media (min-width: 1024px) {
-      body.single.single-inmueble article header h2 {
-        font-size: 3.75em; } }
+    color: #e43834; }
 
 body.single.single-inmueble article .video-wrapper {
   padding: 1.25em 0; }
@@ -3365,13 +3346,27 @@ body.single.single-inmueble .content-wrapper .price {
   font-size: 2.625em;
   margin: 0.3125em 0; }
 
-body.single.single-inmueble .content-wrapper .social-share .whatsapp-web,
-body.single.single-inmueble .content-wrapper .social-share .whatsapp-movil {
-  display: inline-block; }
-  @media (min-width: 1024px) {
-    body.single.single-inmueble .content-wrapper .social-share .whatsapp-web,
-    body.single.single-inmueble .content-wrapper .social-share .whatsapp-movil {
-      display: none; } }
+body.single.single-inmueble .content-wrapper .social-share {
+  position: relative; }
+  body.single.single-inmueble .content-wrapper .social-share .wp {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 92px; }
+    @media (min-width: 1024px) {
+      body.single.single-inmueble .content-wrapper .social-share .wp {
+        top: 4px;
+        right: 125px; } }
+    body.single.single-inmueble .content-wrapper .social-share .wp .whatsapp-web {
+      display: none; }
+      @media (min-width: 1024px) {
+        body.single.single-inmueble .content-wrapper .social-share .wp .whatsapp-web {
+          display: inline-block; } }
+    body.single.single-inmueble .content-wrapper .social-share .wp .whatsapp-movil {
+      display: inline-block; }
+      @media (min-width: 1024px) {
+        body.single.single-inmueble .content-wrapper .social-share .wp .whatsapp-movil {
+          display: none; } }
 
 body .logos-wrapper:after {
   content: "";
@@ -3408,12 +3403,8 @@ body.page-template-_avaluos-tpl {
         body.page-template-_avaluos-tpl > header img {
           margin: 7.5em auto 0; } }
     body.page-template-_avaluos-tpl > header h1 {
-      font-size: 1.875em;
       margin: 0.625em auto 0.625em;
       color: #000000; }
-      @media (min-width: 1024px) {
-        body.page-template-_avaluos-tpl > header h1 {
-          font-size: 3.75em; } }
   body.page-template-_avaluos-tpl article .content-wrapper {
     background-color: rgba(255, 255, 255, 0.7);
     margin: 0 auto 2.5em;
@@ -3575,13 +3566,17 @@ article.pod_horizontal {
   margin-top: 1.875em;
   margin-bottom: 1.875em; }
 
-@media (min-width: 1024px) {
-  .pod_post h3 {
-    font-size: 2.1875em; } }
+.pod_post h3 {
+  font-size: 1.875em; }
+  @media (min-width: 1024px) {
+    .pod_post h3 {
+      font-size: 2.1875em; } }
 
-@media (min-width: 1024px) {
-  .pod_post h4 {
-    font-size: 1.75em; } }
+.pod_post h4 {
+  font-size: 1.125em; }
+  @media (min-width: 1024px) {
+    .pod_post h4 {
+      font-size: 1.75em; } }
 
 .pod_post figure {
   width: 100%;
@@ -3593,15 +3588,13 @@ article.pod_horizontal {
     display: none; }
 
 .loop-clientes h3 {
-  font-size: 1.25em;
   margin: 0.625em auto 0;
   color: #e43834;
   position: relative;
   text-align: center; }
   @media (min-width: 1024px) {
     .loop-clientes h3 {
-      margin: 1.875em auto 0.625em;
-      font-size: 3.75em; } }
+      margin: 1.875em auto 0.625em; } }
 
 .loop-clientes ul {
   padding: 1.875em 0; }

@@ -178,11 +178,28 @@ body {
 				}
 
 				.social-share {
-					.whatsapp-web,
-					.whatsapp-movil {
-						display: inline-block;
+					position: relative;
+					.wp {
+						display: block;
+						position: absolute;
+						top: 0px;
+						right: 92px;
 						@include sm {
+							top: 4px;
+							right: 125px;
+						}
+						.whatsapp-web {
 							display: none;
+							@include sm {
+								display: inline-block;
+							}
+						}
+
+						.whatsapp-movil {
+							display: inline-block;
+							@include sm {
+								display: none;
+							}
 						}
 					}
 				}
