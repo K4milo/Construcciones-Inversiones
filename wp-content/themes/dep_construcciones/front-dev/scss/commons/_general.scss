@@ -17,9 +17,19 @@ body {
       text-decoration: none;
     }
   }
+  form {
+    .form-control {
+      &:focus {
+        border-color: $red;
+        outline: 0;
+        box-shadow: inset 0 1px 1px $op_red, 0 0 8px $op_red;
+      }
+    }
+  }
   
   h1,h2,h3,h4,h5 {
     font-family: $bold;
+    font-size: em(40);
     @include sm {
       font-size: em(60);
     }

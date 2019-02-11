@@ -10,12 +10,10 @@
 		max-height: 600px;
 	}
 	h3 {
-		font-size: em(40);
 		margin: em(10) auto;
 		color: $red;
 		@include sm {
 			margin: em(20) auto em(30);
-			font-size: em(60);	
 		}
 	}
 

@@ -5,12 +5,10 @@
 	background-color: $lgrey2;
 	text-align: center;
 	h3 {
-		font-size: em(20);
 		margin: em(10) auto 0;
 		color: $red;
 		@include sm {
 			margin: em(20) auto em(10);
-			font-size: em(60);
 		}
 	}
 	form {

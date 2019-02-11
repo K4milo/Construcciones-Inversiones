@@ -5,11 +5,13 @@
 
 .pod_post {
 	h3 {
+		font-size: em(30);
 		@include sm {
 			font-size: em(35);
 		}
 	}
 	h4 {
+		font-size: em(18);
 		@include sm {
 			font-size: em(28);
 		}

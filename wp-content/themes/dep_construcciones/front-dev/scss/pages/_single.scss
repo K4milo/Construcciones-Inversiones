@@ -37,10 +37,6 @@ body {
 					padding: em(40) em(4);
 					h2 {
 						color: $red;
-						font-size: em(40);
-						@include sm {
-							font-size: em(60);
-						}
 					}
 				}
 

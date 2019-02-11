@@ -11,12 +11,8 @@
 	}
 
 	h2 {
-		font-size: em(40);
 		margin: em(50) auto em(10);
 		color: $red;
-		@include sm {
-			font-size: em(60);
-		}
 	}
 	p {
 		display: block;
