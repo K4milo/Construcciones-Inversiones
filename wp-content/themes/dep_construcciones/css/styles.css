@@ -490,24 +490,6 @@ footer {
     .block--quotes {
       height: 100vh;
       max-height: 700px; } }
-  .block--quotes .logos-wrapper:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .block--quotes .logos-wrapper ul {
-    padding: 1em 0;
-    text-align: center; }
-    .block--quotes .logos-wrapper ul li {
-      display: block;
-      margin: 0.9375em auto;
-      max-width: 9.375em; }
-      @media (min-width: 1024px) {
-        .block--quotes .logos-wrapper ul li {
-          display: inline-block;
-          margin: 0 0.9375em;
-          max-width: 6.875em; } }
-      .block--quotes .logos-wrapper ul li img {
-        max-width: 100%; }
   .block--quotes h2 {
     font-size: 2.5em;
     margin: 3.125em auto 0.625em;
@@ -3390,6 +3372,26 @@ body.single.single-inmueble .content-wrapper .social-share .whatsapp-movil {
     body.single.single-inmueble .content-wrapper .social-share .whatsapp-web,
     body.single.single-inmueble .content-wrapper .social-share .whatsapp-movil {
       display: none; } }
+
+body .logos-wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body .logos-wrapper ul {
+  padding: 1em 0;
+  text-align: center; }
+  body .logos-wrapper ul li {
+    display: block;
+    margin: 0.9375em auto;
+    max-width: 9.375em; }
+    @media (min-width: 1024px) {
+      body .logos-wrapper ul li {
+        display: inline-block;
+        margin: 0 0.9375em;
+        max-width: 6.875em; } }
+    body .logos-wrapper ul li img {
+      max-width: 100%; }
 
 body.page-template-_avaluos-tpl {
   background-size: cover;

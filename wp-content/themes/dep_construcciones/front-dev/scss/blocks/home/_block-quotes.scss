@@ -9,26 +9,7 @@
 		height: 100vh;
 		max-height: 700px;
 	}
-	.logos-wrapper {
-		@include clearfix;
-		ul {
-			padding: em(16) 0;
-			text-align: center;
-			li {
-				display: block;
-				margin: em(15) auto;
-				max-width: em(150);
-				@include sm {
-					display: inline-block;
-					margin: 0 em(15);
-					max-width: em(110);
-				}
-				img {
-					max-width: 100%;
-				}
-			} 
-		}
-	}
+
 	h2 {
 		font-size: em(40);
 		margin: em(50) auto em(10);

@@ -17,33 +17,27 @@
     </article>
 
 <?php endwhile; ?>
-<?php endif; ?>
-	<?php
+<?php endif;
 
-$icon_items = get_field('links_clientes');
-
+$icon_items = get_field('field-aval');
+	
+if($icon_items):
 ?>
-
-
 <div class="logos-wrapper">
 	<ul>
 	<?php 
-		if($icon_items):
-			while(have_rows('avaladadores')): the_row();
+		while(have_rows('field-aval')): the_row();
 
-				$imagen = get_sub_field('imagen-avalador');
-				
-			?>
-			<li class="icon_item">
-				<figure>
-					<img src="<?php echo $imagen ?>" width="170" height="auto">
-				</figure>
-				
-			</li>
-			<?php
-
-			endwhile;
-		endif;
-	?>
+			$imagen = get_sub_field('imagen-avalador');
+			
+		?>
+		<li class="icon_item">
+			<figure>
+				<img src="<?php echo $imagen ?>" width="170" height="auto">
+			</figure>
+			
+		</li>
+		<?php endwhile; ?>
 	</ul>
 </div>
+<?php endif; ?>
