@@ -3494,7 +3494,7 @@ article.pod_vertical {
 article.pod_horizontal {
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid #434343;
+  border: 1px solid #dfe3e9;
   display: block;
   margin: 1.25em 0.625em; }
   @media (min-width: 1024px) {
