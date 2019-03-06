@@ -3249,7 +3249,8 @@ body.single.single-inmueble .content-wrapper .metadata ul {
     margin: 0.625em; }
     @media (min-width: 1024px) {
       body.single.single-inmueble .content-wrapper .metadata ul li {
-        margin-right: 0.625em; } }
+        margin-right: 0.625em;
+        width: 70px; } }
     body.single.single-inmueble .content-wrapper .metadata ul li .icon {
       display: inline-block;
       overflow: hidden;
