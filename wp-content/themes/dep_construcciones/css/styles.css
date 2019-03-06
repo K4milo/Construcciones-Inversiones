@@ -3241,7 +3241,8 @@ body.single.single-inmueble .content-wrapper .brand {
 
 body.single.single-inmueble .content-wrapper .metadata ul {
   background-color: #fafafa;
-  padding: 0.75em; }
+  padding: 0.75em;
+  text-align: center;}
   body.single.single-inmueble .content-wrapper .metadata ul li {
     display: inline-block;
     font-family: "Bebas Neue";
