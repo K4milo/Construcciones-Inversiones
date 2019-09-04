@@ -202,16 +202,16 @@ The Single Inmueble Loop
                         </div>
                         <?php endif; ?>
                         <div class="social-share">
-                            <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
-                                <div class="wp">
-                                    <a class="whatsapp-movil" href="whatsapp://send/?phone=573125083128&text=">
+                            <?php //echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+                            <!--div class="wp">
+                                <a class="whatsapp-movil" href="whatsapp://send/?phone=573125083128&text=">
+                                <img src="<?php bloginfo('template_url');?>/images/icons/wp.png" alt="whatsapp" width="40px" height="auto">
+                                </a>
+                                <a class="whatsapp-web" href="https://web.whatsapp.com/send/?phone=573125083128&text=">
                                     <img src="<?php bloginfo('template_url');?>/images/icons/wp.png" alt="whatsapp" width="40px" height="auto">
-                                    </a>
-                                    <a class="whatsapp-web" href="https://web.whatsapp.com/send/?phone=573125083128&text=">
-                                        <img src="<?php bloginfo('template_url');?>/images/icons/wp.png" alt="whatsapp" width="40px" height="auto">
-                                    </a>
-                                </div>
-                            </div>
+                                </a>
+                            </div-->
+                        </div>
                         </div>
                         </section>
                         <div class="container video-wrapper">
