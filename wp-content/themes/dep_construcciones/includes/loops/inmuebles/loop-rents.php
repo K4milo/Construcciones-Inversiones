@@ -70,5 +70,12 @@ if($query->have_posts()):
 	?>
 </main>
 <?php 
-	endif; 
-	wp_reset_query();
+	else:
+?>
+<main class="sideresults col-md-8">
+	<h1>No existen resultados que concuerden con tu criterio de búsqueda.</h1>
+</main>
+
+<?php
+	endif;
+	wp_reset_query(); 
